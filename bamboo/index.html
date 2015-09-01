@@ -2,4 +2,17 @@
 title: Bamboo Fanzine Archive
 layout: default
 ---
-Bamboo
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      bamboo
+      {% for fanzine in site.categories.fanzines %}
+        <div>
+          <img src="{{ fanzine.img }}" class="img-responsive" />
+          <p><span class="body-copy">{{ fanzine.title }}</span><br />
+          {{ fanzine.excerpt }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
