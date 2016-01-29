@@ -1,0 +1,482 @@
+/* CSS Document */
+
+#wrap{
+	width:805px;
+	height:100%;
+	margin-bottom:0px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+}
+
+#video_wrap{
+	width:425px;
+	height:100%;
+	margin-bottom:0px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+}
+
+#iframe_wrap{
+	width:521px;
+	height:100%;
+	margin:auto;
+}
+
+#header{
+	width:805px;
+	height:303px;
+	background-image:url(../images/top_quietlife-copy.jpg);
+	background-repeat:no-repeat;
+}
+
+#leftsidewrap{
+	width:140px;
+	height:100%;
+	float:left;
+	margin-top:14px;
+	margin-left:54px;
+}
+
+#japanbox{
+	width:140px;
+	height:54px;
+	background-image:url(../images/japan_logo.gif);
+	margin-bottom:16px;
+}
+
+#menubox{
+	width:132px;
+	background-color:transparent;
+	margin-top:0px;
+	margin-left:8px;
+	margin-right:0px;
+	margin-bottom:0px;
+}
+
+#menuitems{
+	width:132px;
+	background-color:#FFFFFF;
+	margin-bottom:2px;
+}
+
+#rightsidewrap{
+	width:521px;
+	height:100%;
+	float:right;
+	margin-top:14px;
+	margin-right:65px;
+	margin-bottom:16px;
+}
+
+#discogwrap{
+	width:521px;
+	height:100%;
+	margin-top:20px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-bottom:20px;
+}
+
+#lifeintokyotitle{
+	width:521px;
+	height:54px;
+	background-image:url(../images/lifeintokyonet.gif);
+	background-repeat:no-repeat;
+	margin-bottom:16px;
+}
+
+#discographytitle{
+	width:521px;
+	height:54px;
+	background-image:url(../images/title_discography.gif);
+	background-repeat:no-repeat;
+	margin-bottom:12px;
+}
+
+#discographytitle_img{
+	width:521px;
+	height:54px;
+	background-image:url(../images/title_discography.gif);
+	background-repeat:no-repeat;
+	margin-bottom:16px;
+}
+
+#polaroidstitle{
+	width:521px;
+	height:54px;
+	background-image:url(../images/title_polaroids.gif);
+	background-repeat:no-repeat;
+	margin-bottom:16px;
+}
+
+#videostitle{
+	width:521px;
+	height:54px;
+	background-image:url(../images/title_videos.gif);
+	background-repeat:no-repeat;
+	margin-bottom:16px;
+}
+
+#articlestitle{
+	width:521px;
+	height:54px;
+	background-image:url(../images/title_articles.gif);
+	background-repeat:no-repeat;
+	margin-bottom:16px;
+}
+
+#familytreetitle{
+	width:521px;
+	height:54px;
+	background-image:url(../images/title_familytree.gif);
+	background-repeat:no-repeat;
+	margin-bottom:16px;
+}
+
+#collectiontitle{
+	width:521px;
+	height:54px;
+	background-image:url(../images/title_collection.gif);
+	background-repeat:no-repeat;
+	margin-bottom:16px;
+}
+
+#linkstitle{
+	width:521px;
+	height:54px;
+	background-image:url(../images/title_links.gif);
+	background-repeat:no-repeat;
+	margin-bottom:12px;
+}
+
+#contacttitle{
+	width:521px;
+	height:54px;
+	background-image:url(../images/title_contact.gif);
+	background-repeat:no-repeat;
+	margin-bottom:16px;
+}
+
+#newstitle{
+	width:521px;
+	height:178px;
+	background-image:url(../images/news_sylvian.jpg);
+	background-repeat:no-repeat;
+	margin-bottom:10px;
+	
+}
+
+#newsitems{
+	width:521px;
+	height:100%;
+	margin-top:0px;
+	margin-bottom:20px;
+	border-bottom:1px #000000 dotted;
+}
+
+#biographytitle{
+	width:521px;
+	height:54px;
+	background-image:url(../images/biography.gif);
+	background-repeat:no-repeat;
+	margin-bottom:0px;
+}
+
+#biographyimg{
+	width:521px;
+	height:100%;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:10px;
+	font-style:italic;
+	color:#000000;
+	letter-spacing:1px;
+	line-height:12px;
+	margin-top:16px;
+	margin-bottom:12px;
+	float:left;
+}
+
+.h1{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	font-style:normal;
+	font-weight:25;
+	letter-spacing:2px;
+	color:#000000;
+	vertical-align:text-top;
+	text-align:left;
+}
+
+.h2{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	font-style:normal;
+	color:#999999;
+	vertical-align:bottom;
+}
+
+.bodycopy{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:13px;
+	font-style:normal;
+	color:#333333;
+	letter-spacing:1px;
+	line-height:20px;
+}
+
+.bodycopy_dropcap{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:300%;
+	font-style:normal;
+	color:#333333;
+	letter-spacing:1px;
+	line-height:40px;
+	margin-right:4px;
+	margin-bottom:0px;
+	float:left;
+}
+
+.discography_words{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:13px;
+	font-style:normal;
+	color:#333333;
+	letter-spacing:1px;
+	line-height:20px;
+}
+
+.discography_verdana{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	font-style:italic;
+	color:#333333;
+	letter-spacgin:1px;
+	line-height:14px;
+}
+
+#caption{
+	width:521px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:10px;
+	font-style:italic;
+	color:#000000;
+	letter-spacing:1px;
+	line-height:12px;
+	margin-top:6px;
+	margin-bottom:16px;
+}
+
+.imagewithcaption{
+	margin-bottom:10px;
+}
+
+#biographyimage{
+	width:521px;
+	height:100%;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:10px;
+	font-style:italic;
+	color:#000000;
+	letter-spacing:1px;
+	line-height:12px;
+	margin-top:30px;
+	margin-bottom:12px;
+}
+
+
+#biographyreferences{
+	width:521px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:10px;
+	font-style:italic;
+	color:#000000;
+	letter-spacing:1px;
+	line-height:12px;
+	margin-top:6px;
+	margin-bottom:16px;
+	border-bottom:1px #000000 dotted;
+}
+
+.lilreference{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:10px;
+	font-style:italic;
+	color:#000000;
+	letter-spacing:1px;
+	line-height:14px;
+}
+
+#tracklist_wrap{
+	width:521px;
+	height:100%;
+	margin-top:0px;
+	margin-bottom:30px;
+	border-bottom:1px #000000 dotted;
+	float:left;
+}
+
+#tracklist_titles{
+	width:300px;
+	height:100%;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:13px;
+	font-style:normal;
+	color:#333333;
+	letter-spacing:1px;
+	line-height:20px;
+	float:left;
+	margin-bottom:25px;
+}
+
+#tracklist_writer{
+	width:146px;
+	height:100%;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:13px;
+	font-style:normal;
+	color:#999999;
+	letter-spacing:1px;
+	line-height:20px;
+	float:left;
+	margin-bottom:25px;
+}
+
+#tracklist_times{
+	width:70px;
+	height:100%;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:13px;
+	font-style:normal;
+	color:#333333;
+	letter-spacing:1px;
+	line-height:20px;
+	text-align:right;
+	float:left;
+	margin-bottom:25px;
+}
+
+#thumbgallery{
+	width:521px;
+	height:100%;
+	margin-top:0px;
+	margin-bottom:30px;
+	float:left
+}
+
+#thumbgallery_nofloat{
+	width:521px;
+	height:100%;
+	margin-top:0px;
+	margin-bottom:30px;
+	
+}
+
+#thumb{
+	width:58px;
+	height:58px;
+	margin-right:2px;
+	margin-bottom:2px;
+	float:left;	
+}
+
+#thumb_video{
+	width:255px;
+	height:178px;
+	margin-right:2px;
+	margin-bottom:2px;
+	float:left;	
+}
+
+#thumb_video_familytree{
+	width:238px;
+	height:178px;
+	margin-right:2px;
+	margin-bottom:2px;
+	float:left;	
+}
+
+#thumb_collection{
+	width:204px;
+	height:100%;
+	margin-right:22px;
+	margin-bottom:20px;
+	float:left;	
+}
+
+#thumb_collection_textwrap{
+	width:150px;
+	height:100%;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#collection_caption{
+	width:281px;
+	height:178px;
+	float:left;
+	vertical-align:bottom;
+}
+
+#articles_thumb{
+	width:170px;
+	height:118px;
+	margin-right:22px;
+	float:left;	
+}
+
+#articles_caption{
+	width:315px;
+	height:100%;
+	float:left;
+	vertical-align:bottom;
+}
+
+#articles_wrap{
+	width:520px;
+	height:100%;
+	float:left;
+	margin-bottom:22px;
+}
+
+#articles_karnal_sax{
+	width:200px;
+	height:100%;
+	float:left;
+	margin-top:5px;
+	margin-right:20px;
+	margin-bottom:8px;
+}
+
+#articles_drumbrother_camera{
+	width:275px;
+	height:100%;
+	float:left;
+	margin-top:5px;
+	margin-right:20px;
+	margin-bottom:8px;
+}
+
+#links_column{
+	width:255px;
+	height:100%;
+	margin-right:2px;
+	margin-bottom:2px;
+	float:left;	
+}
+
+ul.square {list-style-type: square}
+
+a:link {text-decoration:none; border-bottom:1px dotted #333333; color:#333333;}
+a:visited {text-decoration:none; border-bottom:1px dotted #333333; color:#333333;}
+a:active {text-decoration:none; border-bottom:1px dotted #333333; color:#000000;}
+a:hover {text-decoration:none; border-bottom:1px dotted #FF0000; color:#FF0000;}
+
+a.menu_link:link{text-decoration:none; border-bottom:none;}
+a.menu_link:visited{text-decoration:none; border-bottom:none}
+a.menu_link:active{text-decoration:none; border-bottom:none}
+a.menu_link:hover{text-decoration:none; border-bottom:none}
+
+
+	
