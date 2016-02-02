@@ -1,4 +1,4 @@
-baseurl:
-  /life-in-tokyo
+#baseurl:
+#  /life-in-tokyo
 sass:
     sass_dir: assets/_sass
