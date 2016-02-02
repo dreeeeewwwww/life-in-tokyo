@@ -1,24 +1,17 @@
 ---
 title: Video
-layout: default
+layout: col-md-10
 ---
-<div class="container">
-  <div class="row row-bottom-30 body-content">
-    <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
-      <h1>Video</h1>
 
-      <div class="row">
-        {% for video in site.categories.videos %}
-          <div class="col-md-4 col-sm-4 col-xs-6">
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ video.code | url_escape }}" frameborder="0" allowfullscreen></iframe>
+<h1>Video</h1>
+<div class="row">
+  {% for video in site.categories.videos %}
+    <div class="col-md-4 col-sm-4 col-xs-6">
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ video.code | url_escape }}" frameborder="0" allowfullscreen></iframe>
 
-            <img src="http://img.youtube.com/vi/{{ video.code }}/hqdefault.jpg" class="img-responsive" />
-            <p><span class="body-copy">{{ video.title }}</span><br />
-            {{ video.excerpt }}</p>
-          </div>
-        {% endfor %}
-      </div>
-
+      <img src="http://img.youtube.com/vi/{{ video.code }}/hqdefault.jpg" class="img-responsive" />
+      <p><span class="body-copy">{{ video.title }}</span><br />
+      {{ video.excerpt }}</p>
     </div>
-  </div>
+  {% endfor %}
 </div>
