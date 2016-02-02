@@ -23,19 +23,6 @@ layout: col-md-10
   {% endfor %}
 </div>
 
-<!-- <script type="text/javascript">
-$(".video-clip").on('hidden.bs.modal', function (e) {
-    $(".video-clip iframe").attr("src", $(".video-clip iframe").attr("src"));
-});
-</script> -->
-<!-- <script type="text/javascript">
-  {% for video in site.categories.videos %}
-    var {{ video.code }} = $("#{{ video.code }}").attr("src");
-
-    $("#{{ video.code }}").attr("src","");
-    $("#{{ video.code }}").attr("src", {{ video.code }});
-  {% endfor %}
-</script> -->
 <script type="text/javascript">
   {% for video in site.categories.videos %}
     $("#{{ video.code }}").on('hidden.bs.modal', function (e) {
