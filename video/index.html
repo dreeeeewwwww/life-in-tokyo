@@ -6,22 +6,29 @@ nav: video
 
 <h1>Video</h1>
 <div class="row">
-  {% for video in site.categories.videos %}
-    <div class="col-md-4 col-sm-4 col-xs-6">
-      <img src="http://img.youtube.com/vi/{{ video.code }}/hqdefault.jpg" class="img-responsive" data-toggle="modal" data-target="#{{ video.code }}" />
-      <p>
-        {{ video.title }}<br />
-        {{ video.excerpt }}
-      </p>
-    </div>
-    <div class="modal fade video-clip" id="{{ video.code }}" tabindex="-1" role="dialog" aria-labelledby="{{ video.code }}">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ video.code | url_escape }}" frameborder="0" allowfullscreen></iframe>
+  <div class="col-md-9">
+    <div class="row">
+      {% for video in site.categories.videos %}
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <img src="http://img.youtube.com/vi/{{ video.code }}/hqdefault.jpg" class="img-responsive" data-toggle="modal" data-target="#{{ video.code }}" />
+          <p>
+            {{ video.title }}<br />
+            {{ video.excerpt }}
+          </p>
         </div>
-      </div>
+        <div class="modal fade video-clip" id="{{ video.code }}" tabindex="-1" role="dialog" aria-labelledby="{{ video.code }}">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ video.code | url_escape }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
     </div>
-  {% endfor %}
+  </div>
+  <div class="col-md-3">
+    {% include menu_video.html %}
+  </div>
 </div>
 
 <script type="text/javascript">
