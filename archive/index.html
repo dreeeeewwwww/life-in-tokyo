@@ -3,14 +3,14 @@ title: Bamboo zine Archive
 layout: col-md-10
 nav: archive
 ---
-
+  <h1>Bamboo Fanzine</h1><a id="bamboo"></a>
   <div class="row row-bottom-60 body-content">
-    <div class="col-md-9 col-sm-9 col-xs-10 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
+    <div class="col-md-8 col-sm-8 col-xs-12">
 
-      <h1>Bamboo Fanzine</h1>
+
       <div class="row">
         {% for zine in site.categories.zines %}
-          <div class="col-md-4 col-sm-4 col-xs-6">
+          <div class="col-md-3 col-sm-3 col-xs-6">
             <img src="{{ zine.img }}" class="img-responsive" />
             <p><span class="body-copy">{{ zine.title }}</span><br />
             {{ zine.excerpt }}</p>
@@ -18,10 +18,10 @@ nav: archive
         {% endfor %}
       </div>
 
-      <h1>Articles</h1>
+      <h1>Articles</h1><a id="articles"></a>
       <div class="row">
         {% for article in site.categories.articles %}
-          <div class="col-md-4 col-sm-4 col-xs-6">
+          <div class="col-md-3 col-sm-3 col-xs-6">
             <img src="{{ article.img }}" class="img-responsive" />
             <p><span class="body-copy">{{ article.title }}</span><br />
             {{ article.excerpt }}</p>
@@ -29,10 +29,10 @@ nav: archive
         {% endfor %}
       </div>
 
-      <h1>Connection</h1>
+      <h1>Connection</h1><a id="connection"></a>
       <div class="row">
         {% for connection in site.categories.connections %}
-          <div class="col-md-4 col-sm-4 col-xs-6">
+          <div class="col-md-3 col-sm-3 col-xs-6">
             <img src="{{ connection.img }}" class="img-responsive" />
             <p><span class="body-copy">{{ connection.title }}</span><br />
             {{ connection.excerpt }}</p>
@@ -41,7 +41,7 @@ nav: archive
       </div>
 
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-md-offset-1">
       {% include menu_archive.html %}
     </div>
   </div>
