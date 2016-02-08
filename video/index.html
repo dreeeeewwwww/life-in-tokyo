@@ -4,6 +4,34 @@ layout: col-md-10
 nav: video
 ---
 
+{% assign rawtags = "" %}
+{% for video in site.categories.videos %}
+    {% assign ttags = video.tags | join:'|' | append:'|' %}
+    {% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+{% assign rawtags = rawtags | split:'|' | sort %}
+
+{% for tag in tags %}
+    <h2 id="{{ tag | slugify }}">{{ tag }}</h2>
+    <ul>
+     {% for video in site.categories.videos %}
+         {% if video.tags contains tag %}
+         <li>
+         <h3>
+         <a href="{{ post.url }}">
+         {{ post.title }}
+         <small>{{ video.date | date_to_string }}</small>
+         </a>
+         {% for tag in video.tags %}
+             <a class="tag" href="/blog/tag/#{{ tag | slugify }}">{{ tag }}</a>
+         {% endfor %}
+         </h3>
+         </li>
+         {% endif %}
+     {% endfor %}
+    </ul>
+{% endfor %}
+
 <h1>Promo Clips</h1>
 <div class="row">
   <div class="col-md-8">
