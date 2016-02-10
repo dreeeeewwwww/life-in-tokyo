@@ -96,6 +96,16 @@ ul.affix{
   margin-bottom:30px;
 }
 /* VIDEO Index */
+.video-item{
+  color:$grey-9;
+
+  p{
+    padding:0 5px;
+  }
+  strong{
+    color:$body;
+  }
+}
 .modal-backdrop{
   background-color:transparent !important;
 }
@@ -133,9 +143,7 @@ ul.affix{
       @include border-radius(0 !important);
       background:transparent !important;
 
-      iframe{
-        margin-bottom:15px;
-      }
+
     }
   }
 }
