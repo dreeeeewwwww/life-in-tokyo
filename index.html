@@ -5,13 +5,13 @@ layout: col-md-10
 <h1>News</h1>
 
 <div class="row">
-  {% for video in site.categories.videos %}
-    <div class="col-md-4 col-sm-4 col-xs-6">
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ video.code | url_escape }}" frameborder="0" allowfullscreen></iframe>
+  {% for news in site.categories.newss %}
+    <div class="col-md-12 col-sm-12 col-xs-12">
 
-      <img src="http://img.youtube.com/vi/{{ video.code }}/hqdefault.jpg" class="img-responsive" />
-      <p><span class="body-copy">{{ video.title }}</span><br />
-      {{ video.excerpt }}</p>
+      <img src="{{ news.img }}" class="img-responsive" />
+      <h2>{{ news.title }}</h2>
+      <p>{{ news.excerpt }}</p>
+      <p>{{ news.content }}</p>
     </div>
   {% endfor %}
 </div>
