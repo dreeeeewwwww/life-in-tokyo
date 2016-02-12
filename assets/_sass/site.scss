@@ -98,6 +98,11 @@ ul.affix{
 /* VIDEO Index */
 .video-item{
   color:$grey-9;
+  @include transition(all 0.2s ease-in-out);
+  &:hover{
+    cursor:pointer;
+
+  }
 
   p{
     padding:0 5px;

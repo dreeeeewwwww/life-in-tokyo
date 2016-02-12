@@ -54,6 +54,9 @@ nav: video
 
 <script type="text/javascript">
   {% for video in site.categories.videos %}
+    $("#{{ video.code }}").on('show.bs.modal', function(e) {
+      $("#{{ video.code }} iframe").attr({'src':'https://www.youtube.com/embed/{{ video.code | url_escape }}'});
+    });
     $("#{{ video.code }}").on('hidden.bs.modal', function (e) {
       $("#{{ video.code }} iframe").attr("src", $("#{{ video.code }} iframe").attr("src"));
     });
