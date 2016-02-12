@@ -1,16 +1,17 @@
 ---
 title: Archive
-layout: col-md-10
+layout: default
 nav: archive
 ---
   <h1>Bamboo Fanzine</h1><a id="bamboo"></a>
   <div class="row row-bottom-60 body-content">
     <div class="col-md-8 col-sm-8 col-xs-12">
 
-
       <div class="row">
         {% for zine in site.categories.zines %}
           <div class="col-md-3 col-sm-3 col-xs-6">
+            <a href="{{ zine.url }}">{{ zine.title }}</a>
+
             <img src="{{ zine.img }}" class="img-responsive" />
             <p><span class="body-copy">{{ zine.title }}</span><br />
             {{ zine.excerpt }}</p>
