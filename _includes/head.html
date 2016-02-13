@@ -12,5 +12,5 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/tokyo.css">
 </head>
-<body data-spy="scroll" data-target=".scrollspy">
+<body {% if page.scrollspy == true %}data-spy="scroll" data-target=".scrollspy"{% endif %}>
   {% include nav.html %}
