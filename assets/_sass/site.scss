@@ -158,3 +158,10 @@ ul.affix{
 .row-bottom-30{margin-bottom:30px;}
 .row-bottom-60{margin-bottom:60px;}
 .row-bottom-90{margin-bottom:90px;}
+
+/* MEDIA Q */
+@media (min-width: 1600px){
+.container {
+    width: 1470px !important;
+}
+}
