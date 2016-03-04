@@ -4,58 +4,148 @@ layout: default
 nav: archive
 scrollspy: true
 ---
-  <h1>Bamboo Fanzine</h1><a id="bamboo"></a>
+  <h1>Bamboo Fanzine</h1>
   <div class="row row-bottom-60 body-content">
     <div class="col-md-8 col-sm-8 col-xs-12">
-
-      <div class="row">
-        {% for zine in site.categories.zines %}
-          <div class="col-md-3 col-sm-3 col-xs-6 match-height">
-
-
-            <img src="{{ zine.img }}" class="img-responsive" />
-            <p><a href="{{ zine.url }}">{{ zine.title }}</a><br />
-            {{ zine.excerpt }}</p>
-          </div>
-        {% endfor %}
-      </div>
-
-      <h1>Articles</h1><a id="articles"></a>
-      <div class="row">
-        {% for article in site.categories.articles %}
-          <div class="col-md-3 col-sm-3 col-xs-6 match-height">
-            <a href="{{ article.url }}">
-              <img src="{{ article.img }}" class="img-responsive" />
-              <p>
-                {{ article.title }}</a><br />
-                {{ article.excerpt }}
-              </p>
-            </a>
-          </div>
-        {% endfor %}
-      </div>
-
-      <h1>Connection</h1><a id="connection"></a>
-      <div class="row">
-        {% for connection in site.categories.connections %}
-          <div class="col-md-3 col-sm-3 col-xs-6 match-height">
-            <img src="{{ connection.img }}" class="img-responsive" />
-            <p><a href="{{ connection.url }}">{{ connection.title }}</a><br />
-            {{ connection.excerpt }}</p>
-          </div>
-        {% endfor %}
-      </div>
-
-      <h1>Wantlist</h1><a id="connection"></a>
-      <div class="row">
-        <div class="col-md-12">
-          Have something to add to the archive?
-          <ol>
-            <li>Music Life 198X</li>
-            <li>Foo</li>
-          </ol>
+      <section id="bamboo">
+        <div class="row">
+          {% for zine in site.categories.zines %}
+            <div class="col-md-3 col-sm-3 col-xs-6 match-height">
+              <img src="{{ zine.img }}" class="img-responsive" />
+              <p><a href="{{ zine.url }}">{{ zine.title }}</a><br />
+              {{ zine.excerpt }}</p>
+            </div>
+          {% endfor %}
         </div>
-      </div>
+      </section>
+
+      <section id="books">
+        <h1>Books</h1>
+        <div class="row">
+          {% for book in site.categories.bookss %}
+            <div class="col-md-3 col-sm-3 col-xs-6 match-height">
+              <a href="{{ book.url }}">
+                <img src="{{ book.img }}" class="img-responsive" />
+                <p>
+                  {{ book.title }}</a><br />
+                  {{ book.excerpt }}
+                </p>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="magazines">
+        <h1>Magazines</h1>
+        <div class="row">
+          {% for magazine in site.categories.magazines %}
+            <div class="col-md-3 col-sm-3 col-xs-6 match-height">
+              <a href="{{ magazine.url }}">
+                <img src="{{ magazine.img }}" class="img-responsive" />
+                <p>
+                  {{ magazine.title }}</a><br />
+                  {{ magazine.excerpt }}
+                </p>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="tour">
+        <h1>Tour Programs</h1>
+        <div class="row">
+          {% for program in site.categories.programs %}
+            <div class="col-md-3 col-sm-3 col-xs-6 match-height">
+              <a href="{{ program.url }}">
+                <img src="{{ program.img }}" class="img-responsive" />
+                <p>
+                  {{ program.title }}</a><br />
+                  {{ program.excerpt }}
+                </p>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="posters">
+        <h1>Posters</h1>
+        <div class="row">
+          {% for poster in site.categories.posters %}
+            <div class="col-md-3 col-sm-3 col-xs-6 match-height">
+              <a href="{{ poster.url }}">
+                <img src="{{ poster.img }}" class="img-responsive" />
+                <p>
+                  {{ poster.title }}</a><br />
+                  {{ poster.excerpt }}
+                </p>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="merch">
+        <h1>Merch</h1>
+        <div class="row">
+          {% for merch in site.categories.merchs %}
+            <div class="col-md-3 col-sm-3 col-xs-6 match-height">
+              <a href="{{ merch.url }}">
+                <img src="{{ merch.img }}" class="img-responsive" />
+                <p>
+                  {{ merch.title }}</a><br />
+                  {{ merch.excerpt }}
+                </p>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="articles">
+        <h1>Articles</h1>
+        <div class="row">
+          {% for article in site.categories.articles %}
+            <div class="col-md-3 col-sm-3 col-xs-6 match-height">
+              <a href="{{ article.url }}">
+                <img src="{{ article.img }}" class="img-responsive" />
+                <p>
+                  {{ article.title }}</a><br />
+                  {{ article.excerpt }}
+                </p>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="connection">
+        <h1>Connection</h1>
+        <div class="row">
+          {% for connection in site.categories.connections %}
+            <div class="col-md-3 col-sm-3 col-xs-6 match-height">
+              <img src="{{ connection.img }}" class="img-responsive" />
+              <p><a href="{{ connection.url }}">{{ connection.title }}</a><br />
+              {{ connection.excerpt }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="contribute">
+        <h1>Contribute</h1>
+        <div class="row">
+          <div class="col-md-12">
+            Have something to add to the archive?
+            <ol>
+              <li>Music Life 198X</li>
+              <li>Foo</li>
+            </ol>
+          </div>
+        </div>
+      </section>
 
     </div>
     <div class="col-md-3 col-md-offset-1">
