@@ -10,11 +10,11 @@ scrollspy: true
 
       <div class="row">
         {% for zine in site.categories.zines %}
-          <div class="col-md-3 col-sm-3 col-xs-6">
-            <a href="{{ zine.url }}">{{ zine.title }}</a>
+          <div class="col-md-3 col-sm-3 col-xs-6 match-height">
+
 
             <img src="{{ zine.img }}" class="img-responsive" />
-            <p><span class="body-copy">{{ zine.title }}</span><br />
+            <p><a href="{{ zine.url }}">{{ zine.title }}</a><br />
             {{ zine.excerpt }}</p>
           </div>
         {% endfor %}
@@ -23,10 +23,14 @@ scrollspy: true
       <h1>Articles</h1><a id="articles"></a>
       <div class="row">
         {% for article in site.categories.articles %}
-          <div class="col-md-3 col-sm-3 col-xs-6">
-            <img src="{{ article.img }}" class="img-responsive" />
-            <p><span class="body-copy">{{ article.title }}</span><br />
-            {{ article.excerpt }}</p>
+          <div class="col-md-3 col-sm-3 col-xs-6 match-height">
+            <a href="{{ article.url }}">
+              <img src="{{ article.img }}" class="img-responsive" />
+              <p>
+                {{ article.title }}</a><br />
+                {{ article.excerpt }}
+              </p>
+            </a>
           </div>
         {% endfor %}
       </div>
@@ -34,9 +38,9 @@ scrollspy: true
       <h1>Connection</h1><a id="connection"></a>
       <div class="row">
         {% for connection in site.categories.connections %}
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-3 col-sm-3 col-xs-6 match-height">
             <img src="{{ connection.img }}" class="img-responsive" />
-            <p><span class="body-copy">{{ connection.title }}</span><br />
+            <p><a href="{{ connection.url }}">{{ connection.title }}</a><br />
             {{ connection.excerpt }}</p>
           </div>
         {% endfor %}
@@ -58,3 +62,4 @@ scrollspy: true
       {% include menu_archive.html %}
     </div>
   </div>
+  {% include match_height.html %}
