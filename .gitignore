@@ -35,3 +35,9 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# LOCAL #
+.ruby-gemset.03.04.2016-22:06:51
+.ruby-version.03.04.2016-22:06:51
+.sass-cache/
+_site/
