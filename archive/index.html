@@ -4,9 +4,24 @@ layout: default
 nav: archive
 scrollspy: true
 ---
+<section id="fffooo">
+  <div class="row">
+    TEST
+    {% for bamboo in site.data.archive.bamboo.issue %}
+      <div class="col-md-3 col-sm-3 col-xs-6 match-height">
+        <p>{{ issue.title }}</p>
+        <p>{{ issue.number }}</p>
+        <p><img src="{{ issue.img }}"</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
   <h1>Bamboo Fanzine</h1>
   <div class="row row-bottom-60 body-content">
     <div class="col-md-8 col-sm-8 col-xs-12">
+
+
       <section id="bamboo">
         <div class="row">
           {% for zine in site.categories.zines %}
