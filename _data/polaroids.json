@@ -1,0 +1,272 @@
+{
+  "bands":[
+    {
+      "img":"/assets/images/polaroids_japan_1978_03.jpg",
+      "thumb":"/assets/images/polaroids_japan_1978_03T.jpg",
+      "title":"",
+      "description":"1978 (or late 77?).",
+      "id":"band-01"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_1978_01.jpg",
+      "thumb":"/assets/images/polaroids_japan_1978_01T.jpg",
+      "title":"",
+      "description":"1978",
+      "id":"band-02"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_1978_04.jpg",
+      "thumb":"/assets/images/polaroids_japan_1978_04T.jpg",
+      "title":"",
+      "description":"1978",
+      "id":"band-03"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_nyc.jpg",
+      "thumb":"/assets/images/polaroids_japan_nycthumb.jpg",
+      "title":"New York City, November 1978",
+      "description":"Photo by Michael Putland.",
+      "id":"band-04"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_flyerkill.jpg",
+      "thumb":"/assets/images/polaroids_japan_flyerkillT.jpg",
+      "title":"1978",
+      "description":"Japanese flyer",
+      "id":"band-05"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_1978_06.jpg",
+      "thumb":"/assets/images/polaroids_japan_1978_06T.jpg",
+      "title":"1978",
+      "description":"",
+      "id":"band-06"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_1978_07.jpg",
+      "thumb":"/assets/images/polaroids_japan_1978_07T.jpg",
+      "title":"1978",
+      "description":"",
+      "id":"band-07"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_1979_01.jpg",
+      "thumb":"/assets/images/polaroids_japan_1979_01T.jpg",
+      "title":"1979",
+      "description":"photo by Fin Costello",
+      "id":"band-08"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_blurry.jpg",
+      "thumb":"/assets/images/polaroids_japan_blurryT.jpg",
+      "title":"",
+      "description":"Photo by Fin Costello.",
+      "id":"band-09"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_umbrellas.jpg",
+      "thumb":"/assets/images/polaroids_japan_umbrellasT.jpg",
+      "title":"1980",
+      "description":"Thanks to Simon C. for the scan.",
+      "id":"band-10"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_couch.jpg",
+      "thumb":"/assets/images/polaroids_japan_couchT.jpg",
+      "title":"1980",
+      "description":"Thanks to Simon C. for the scan.",
+      "id":"band-11"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_haircuts.jpg",
+      "thumb":"/assets/images/polaroids_japan_haircutsT.jpg",
+      "title":"1980",
+      "description":"Thanks to Simon C. for the scan.",
+      "id":"band-12"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_1980dbl.jpg",
+      "thumb":"/assets/images/polaroids_japan_1980dblT.jpg",
+      "title":"1980",
+      "description":"Thanks to Simon C. for the scan.",
+      "id":"band-13"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_sheet.jpg",
+      "thumb":"/assets/images/polaroids_japan_sheetT.jpg",
+      "title":"1980",
+      "description":"",
+      "id":"band-14"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_gtpback.jpg",
+      "thumb":"/assets/images/polaroids_japan_gtpbackT.jpg",
+      "title":"1980",
+      "description":"Photo by Nicola Tyson.",
+      "id":"band-15"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_1981_com.jpg",
+      "thumb":"/assets/images/polaroids_japan_1981_comT.jpg",
+      "title":"1981",
+      "description":"photo by Fin Costello",
+      "id":"band-16"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_com02.jpg",
+      "thumb":"/assets/images/polaroids_japan_com02T.jpg",
+      "title":"1981",
+      "description":"photo by Fin Costello",
+      "id":"band-17"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_cosB.jpg",
+      "thumb":"/assets/images/polaroids_japan_cosBT.jpg",
+      "title":"1981",
+      "description":"photo by Fin Costello",
+      "id":"band-18"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_muddy.jpg",
+      "thumb":"/assets/images/polaroids_japan_muddyT.jpg",
+      "title":"",
+      "description":"Photo by Virginia Turbett",
+      "id":"band-19"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_01.jpg",
+      "thumb":"/assets/images/polaroids_japan_01T.jpg",
+      "title":"",
+      "description":"Photo by Virgina Turbett",
+      "id":"band-20"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_mcolor.jpg",
+      "thumb":"/assets/images/polaroids_japan_mcolorT.jpg",
+      "title":"",
+      "description":"photo by Virginia Turbett",
+      "id":"band-21"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_jansen01.jpg",
+      "thumb":"/assets/images/polaroids_japan_jansen01T.jpg",
+      "title":"Recording Tin Drum",
+      "description":"photo by Steve Jansen. www.stevejansen.com/imageshop.Buy here",
+      "id":"band-22"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_fans.jpg",
+      "thumb":"/assets/images/polaroids_japan_fansT.jpg",
+      "title":"London, 1981",
+      "description":"Jansen and Karn with Japanese fans.",
+      "id":"band-23"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_81couch.jpg",
+      "thumb":"/assets/images/polaroids_japan_81couchT.jpg",
+      "title":"Fan Library magazine",
+      "description":"p. 11.",
+      "id":"band-24"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_mspiggy.jpg",
+      "thumb":"/assets/images/polaroids_japan_mspiggyT.jpg",
+      "title":"1986",
+      "description":"from Bamboo, Issue 11",
+      "id":"band-25"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_totp.jpg",
+      "thumb":"/assets/images/polaroids_japan_totpT.jpg",
+      "title":"Top of the Pops",
+      "description":"Possibly from their TOTP performance of Cantonese Boy",
+      "id":"band-26"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_pio02.jpg",
+      "thumb":"/assets/images/polaroids_japan_pio02T.jpg",
+      "title":"1982",
+      "description":"",
+      "id":"band-27"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_pio03.jpg",
+      "thumb":"/assets/images/polaroids_japan_pio03T.jpg",
+      "title":"1982",
+      "description":"",
+      "id":"band-28"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_pio.jpg",
+      "thumb":"/assets/images/polaroids_japan_pioT.jpg",
+      "title":"",
+      "description":"From the back cover of the Sons of Pioneers tour book.",
+      "id":"band-29"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_82spread.jpg",
+      "thumb":"/assets/images/polaroids_japan_82spreadT.jpg",
+      "title":"Magazine spread, 1982. ",
+      "description":"Thanks to Simon C. for the scan.",
+      "id":"band-30"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_jk03.jpg",
+      "thumb":"/assets/images/polaroids_japan_jk03T.jpg",
+      "title":"",
+      "description":"Photo by Fin Costello",
+      "id":"band-31"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_sk.jpg",
+      "thumb":"/assets/images/polaroids_japan_skT.jpg",
+      "title":"",
+      "description":"Photo by Fin Costello",
+      "id":"band-32"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_ks02.jpg",
+      "thumb":"/assets/images/polaroids_japan_ks02T.jpg",
+      "title":"1982",
+      "description":"From A Tourist's Guide to Japan, p. 4. Photo by Fin Costello.",
+      "id":"band-33"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_ks01.jpg",
+      "thumb":"/assets/images/polaroids_japan_ks01T.jpg",
+      "title":"1982",
+      "description":"From A Tourist's Guide to Japan, p. 20. Photo by Fin Costello.",
+      "id":"band-33"
+    },
+    {
+      "img":"/assets/images/polaroids_japan_bros.jpg",
+      "thumb":"/assets/images/polaroids_japan_brosT.jpg",
+      "title":"1983",
+      "description":"Smash Hits magazine",
+      "id":"band-34"
+    }
+  ],
+  "sylvians":[
+    {
+      "img":"http://s3.amazonaws.com/quietus_production/images/articles/11816/David_Sylvian_550_1364732772_crop_550x365.jpg",
+      "thumb":"http://s3.amazonaws.com/quietus_production/images/articles/11816/David_Sylvian_550_1364732772_crop_550x365.jpg",
+      "title":"Bamboo One",
+      "description":"foo",
+      "id":"sylvian-01"
+    },
+    {
+      "img":"http://s3.amazonaws.com/quietus_production/images/articles/11816/David_Sylvian_550_1364732772_crop_550x365.jpg",
+      "thumb":"http://s3.amazonaws.com/quietus_production/images/articles/11816/David_Sylvian_550_1364732772_crop_550x365.jpg",
+      "title":"Bamboo One",
+      "description":"foo",
+      "id":"sylvian-02"
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"band-33"
+    },
+  ]
+}
