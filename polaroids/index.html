@@ -23,24 +23,30 @@ nav: polaroids
   {% endfor %}
 </div>
 
-<h2>sylvian</h2>
-{% for sylvian in site.data.polaroids.sylvians %}
-  <div>{{ sylvian.img }}</div>
-{% endfor %}
-
-
 <h2>David Sylvian</h2>
 <div class="row row-bottom-60">
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_78yoshi.jpg" title="1978." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_78yoshiT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_1978sit.jpg" title="Thanks to S4pB for the scan." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_1978sitT.jpg" border="0" /></a></div>
-  <div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_78_01.jpg" title="1978." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_78_01T.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_moroder.jpg" title="Recording Life in Tokyo with Giorgio Moroder. Los Angeles, 1979." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_moroderT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_blue01.jpg" title="From the 1980 Japanese tour book." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_blue01T.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_blue02.jpg" title="1980." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_blue02T.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_qc01.jpg" title="Photo by Nicola Tyson, 1980." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_qc01T.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_qc02.jpg" title="Photo by Fin Costello, 1980." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_qc02T.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_vg.jpg" title="Sylvian vs. Space Invaders. Tokyo, 1980." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_vgT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_crowd.jpg" title="Photo by Nicola Tyson." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_crowdT.jpg" border="0" /></a></div>
+  {% for sylvian in site.data.polaroids.sylvians %}
+    <div id="thumb" class="col-md-1">
+      <img src="{{ sylvian.thumb }}" class="img-responsive" data-toggle="modal" data-target="#{{ sylvian.id }}" />
+    </div>
+    <div class="modal fade video-clip" id="{{ sylvian.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ band.title }}">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <img src="{{ sylvian.img }}" class="img-responsive" />
+          <p>
+            {{ sylvian.title }}, {{ sylvian.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+
+<div class="row row-bottom-60">
+
+	
 	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_books.jpg" title="1981 (?)." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_booksT.jpg" border="0" /></a></div>
 	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_blurry.jpg" title="Photo by Fin Costello." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_blurryT.jpg" border="0" /></a></div>
 	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_makeup.jpg" title="Uhhh...wow." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_makeupT.jpg" border="0" /></a></div>
