@@ -151,7 +151,16 @@ ul.affix{
     }
   }
 }
-
+/* CSS3 FADEIN */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fade-in {
+  -webkit-animation:fadeIn ease-in 0.5s;
+  -moz-animation:fadeIn ease-in 0.5s;
+  -o-animation: fadeIn ease-in 0.5s; /* Opera */
+  animation:fadeIn ease-in 0.5s;
+}
 /* HELPERS */
 .row-bottom-15{margin-bottom:15px;}
 .row-bottom-30{margin-bottom:30px;}
