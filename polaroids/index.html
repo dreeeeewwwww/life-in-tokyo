@@ -3,86 +3,29 @@ title: Polaroids - Images
 layout: default
 nav: polaroids
 ---
-{% for polaroid in site.data.test.polaroids %}
+<h1>Polaroids</h1>
+{% for polaroid in site.data.polaroids.polaroids %}
   <h2>{{ polaroid.name }}</h2>
-  {% for asset in polaroid.assets %}
-    <div id="thumb" class="col-md-1">
-      <img src="{{ asset.thumb }}" class="img-responsive" data-toggle="modal" data-target="#{{ asset.id }}" />
-    </div>
-    <div class="modal fade video-clip" id="{{ asset.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ asset.title }}">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <img src="{{ asset.img }}" class="img-responsive" />
-          <small>{{ asset.attribution }}</small>
-          <p>
-            {{ asset.title }}, {{ asset.description }}
-          </p>
+  <div class="row row-bottom-60">
+    {% for asset in polaroid.assets %}
+      <div id="thumb" class="col-md-1">
+        <img src="{{ asset.thumb }}" class="img-responsive" data-toggle="modal" data-target="#{{ asset.id }}" />
+      </div>
+      <div class="modal fade video-clip" id="{{ asset.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ asset.title }}">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <img src="{{ asset.img }}" class="img-responsive" />
+            <small>{{ asset.attribution }}</small>
+            <p>
+              {{ asset.title }}, {{ asset.description }}
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 {% endfor %}
 
-<h1>Polaroids</h1>
-<h2>Band</h2>
-<div class="row row-bottom-60">
-  {% for band in site.data.polaroids.bands %}
-    <div id="thumb" class="col-md-1">
-      <img src="{{ band.thumb }}" class="img-responsive" data-toggle="modal" data-target="#{{ band.id }}" />
-    </div>
-    <div class="modal fade video-clip" id="{{ band.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ band.title }}">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <img src="{{ band.img }}" class="img-responsive" />
-          <small>{{ band.attribution }}</small>
-          <p>
-            {{ band.title }}, {{ band.description }}
-          </p>
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-</div>
-
-<h2>David Sylvian</h2>
-<div class="row row-bottom-60">
-  {% for sylvian in site.data.polaroids.sylvians %}
-    <div id="thumb" class="col-md-1">
-      <img src="{{ sylvian.thumb }}" class="img-responsive" data-toggle="modal" data-target="#{{ sylvian.id }}" />
-    </div>
-    <div class="modal fade video-clip" id="{{ sylvian.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ band.title }}">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <img src="{{ sylvian.img }}" class="img-responsive" />
-          <small>{{ sylvian.attribution }}</small>
-          <p>
-            {{ sylvian.title }}, {{ sylvian.description }}
-          </p>
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-</div>
-
-<h2>Mick Karn</h2>
-<div class="row row-bottom-60">
-  {% for karn in site.data.polaroids.karns %}
-    <div id="thumb" class="col-md-1">
-      <img src="{{ karn.thumb }}" class="img-responsive" data-toggle="modal" data-target="#{{ karn.id }}" />
-    </div>
-    <div class="modal fade video-clip" id="{{ karn.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ karn.title }}">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <img src="{{ karn.img }}" class="img-responsive" />
-          <small>{{ karn.attribution }}</small>
-          <p>
-            {{ karn.title }}, {{ karn.description }}
-          </p>
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-</div>
 
 
 <div class="row row-bottom-60">
