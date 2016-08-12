@@ -358,9 +358,9 @@
       "img":"/assets/images/polaroids_sylvian_crowd.jpg",
       "thumb":"/assets/images/polaroids_sylvian_crowdT.jpg",
       "title":"",
-      "description":"photo by Nicola Tyson",
+      "description":"",
       "id":"sylvian-10",
-      "attribution":""
+      "attribution":"Nicola Tyson"
     },
     {
       "img":"/assets/images/polaroids_sylvian_books.jpg",
@@ -374,176 +374,186 @@
       "img":"/assets/images/polaroids_sylvian_blurry.jpg",
       "thumb":"/assets/images/polaroids_sylvian_blurryT.jpg",
       "title":"",
-      "description":"photo by Fin Costello",
+      "description":"",
       "id":"sylvian-12",
-      "attribution":""
+      "attribution":"Fin Costello"
     },
     {
-      "img":"",
-      "thumb":"",
+      "img":"/assets/images/polaroids_sylvian_makeup.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_makeupT.jpg",
       "title":"",
       "description":"",
       "id":"sylvian-13",
       "attribution":""
     },
     {
-      "img":"",
-      "thumb":"",
+      "img":"/assets/images/polaroids_sylvian_b01.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_b01T.jpg",
       "title":"",
       "description":"",
       "id":"sylvian-14",
-      "attribution":""
+      "attribution":"Michael Putland"
     },
     {
-      "img":"",
-      "thumb":"",
-      "title":"",
+      "img":"/assets/images/polaroids_sylvian_vogue.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_vogueT.jpg",
+      "title":"VOGUE!",
       "description":"",
       "id":"sylvian-15",
       "attribution":""
     },
     {
-      "img":"",
-      "thumb":"",
-      "title":"",
-      "description":"",
+      "img":"/assets/images/polaroids_japan_FLcover.jpg",
+      "thumb":"/assets/images/polaroids_japan_FLcover.jpg",
+      "title":"1982",
+      "description":"Cover of Fan Library",
       "id":"sylvian-16",
       "attribution":""
     },
     {
-      "img":"",
-      "thumb":"",
+      "img":"/assets/images/polaroids_sylvian_com.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_comT.jpg",
       "title":"",
       "description":"",
       "id":"sylvian-17",
-      "attribution":""
+      "attribution":"Fin Costello"
     },
     {
-      "img":"",
-      "thumb":"",
+      "img":"/assets/images/polaroids_sylvian_jansen04.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_jansen04T.jpg",
       "title":"",
-      "description":"",
+      "description":"Recording Tin Drum with Steve Nye. Photo by Steve Jansen. www.stevejansen.com/imageshop.",
       "id":"sylvian-18",
-      "attribution":""
+      "attribution":"Steve Jansen"
     },
     {
-      "img":"",
-      "thumb":"",
+      "img":"/assets/images/polaroids_sylvian_jansen03.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_jansen03T.jpg",
       "title":"",
-      "description":"",
+      "description":"Filming the Visions of China video. www.stevejansen.com/imageshop.",
       "id":"sylvian-19",
-      "attribution":""
+      "attribution":"Steve Jansen"
     },
     {
-      "img":"",
-      "thumb":"",
+      "img":"/assets/images/polaroids_sylvian_jansen01.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_jansen01T.jpg",
       "title":"",
       "description":"",
       "id":"sylvian-20",
-      "attribution":""
+      "attribution":"Steve Jansen"
     },
     {
-      "img":"",
-      "thumb":"",
+      "img":"/assets/images/polaroids_sylvian_jansen02.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_jansen02T.jpg",
       "title":"",
-      "description":"",
+      "description":"Recording Bamboo Houses with Ryuichi Sakamoto. www.stevejansen.com/imageshop.",
       "id":"sylvian-21",
-      "attribution":""
+      "attribution":"Steve Jansen"
     },
     {
-      "img":"",
-      "thumb":"",
+      "img":"/assets/images/polaroids_sylvian_tdalt.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_tdaltT.jpg",
       "title":"",
-      "description":"",
+      "description":"Alternate Tin Drum cover",
       "id":"sylvian-22",
-      "attribution":""
+      "attribution":"Fin Costello"
     },
     {
-      "img":"",
-      "thumb":"",
-      "title":"",
-      "description":"",
+      "img":"/assets/images/polaroids_sylvian_flmic.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_flmicT.jpg",
+      "title":"1982",
+      "description":"Fan Library, p.23",
       "id":"sylvian-23",
-      "attribution":""
+      "attribution":"Fin Costello"
     },
     {
-      "img":"",
-      "thumb":"",
-      "title":"",
-      "description":"",
+      "img":"/assets/images/polaroids_sylvian_smoking.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_smokingT.jpg",
+      "title":"1982",
+      "description":"Fan Library, p.34",
       "id":"sylvian-24",
-      "attribution":""
+      "attribution":"Fin Costello"
     },
     {
-      "img":"",
-      "thumb":"",
+      "img":"/assets/images/polaroids_sylvian_tourists.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_touristsT.jpg",
       "title":"",
       "description":"",
       "id":"sylvian-25",
-      "attribution":""
+      "attribution":"Fin Costello"
     },
     {
-      "img":"",
-      "thumb":"",
-      "title":"",
-      "description":"",
+      "img":"/assets/images/polaroids_sylvian_bwguitar.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_bwguitarT.jpg",
+      "title":"1982",
+      "description":"Fan Library, p.39",
       "id":"sylvian-26",
-      "attribution":""
+      "attribution":"Virginia Turbett"
     },
     {
-      "img":"",
-      "thumb":"",
+      "img":"/assets/images/polaroids_sylvian_aop12.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_aop12T.jpg",
       "title":"",
-      "description":"",
+      "description":"From The Art of Parties single.",
       "id":"sylvian-27",
-      "attribution":""
+      "attribution":"Steve Jansen"
     },
     {
-      "img":"",
-      "thumb":"",
-      "title":"",
-      "description":"",
+      "img":"/assets/images/polaroids_sylvian_rapport.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_rapportT.jpg",
+      "title":"1982",
+      "description":"Fan Library, p. 37",
       "id":"sylvian-28",
-      "attribution":""
+      "attribution":"Steve Rapport"
     },
     {
-      "img":"",
-      "thumb":"",
+      "img":"/assets/images/polaroids_sylvian_corbijn.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_corbijnT.jpg",
       "title":"",
-      "description":"",
+      "description":"Oil on Canvas",
       "id":"sylvian-29",
-      "attribution":""
+      "attribution":"Anton Corbijn"
     },
     {
-      "img":"",
-      "thumb":"",
-      "title":"",
-      "description":"",
+      "img":"/assets/images/polaroids_sylvian_bam.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_bamT.jpg",
+      "title":"1982",
+      "description":"Bamboo Music promo video",
       "id":"sylvian-30",
       "attribution":""
     },
     {
-      "img":"",
-      "thumb":"",
-      "title":"",
-      "description":"",
+      "img":"/assets/images/polaroids_sylvian_smash84.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_smash84T.jpg",
+      "title":"1984",
+      "description":"Smash Hits magazine",
       "id":"sylvian-31",
       "attribution":""
     },
     {
-      "img":"",
-      "thumb":"",
-      "title":"",
-      "description":"",
+      "img":"/assets/images/polaroids_sylvian_b02.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_b02T.jpg",
+      "title":"1987",
+      "description":"Bamboo fanzine, Issue 12",
       "id":"sylvian-32",
       "attribution":""
     },
     {
-      "img":"",
-      "thumb":"",
+      "img":"/assets/images/polaroids_sylvian_opium01.jpg",
+      "thumb":"/assets/images/polaroids_sylvian_opium01T.jpg",
       "title":"",
-      "description":"",
+      "description":"Opium Arts postcard",
       "id":"sylvian-33",
+      "attribution":"Yuka Fujii"
+    }
+  ],
+  "karns":[
+    {
+      "img":"/assets/images/polaroids_karn_7803.jpg",
+      "thumb":"/assets/images/polaroids_karn_7803T.jpg",
+      "title":"1978",
+      "description":"",
+      "id":"karn-01",
       "attribution":""
     },
     {
@@ -551,7 +561,199 @@
       "thumb":"",
       "title":"",
       "description":"",
-      "id":"sylvian-34",
+      "id":"karn-02",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-03",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-04",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-05",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-06",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-07",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-08",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-09",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-10",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-11",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-12",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-13",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-14",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-15",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-16",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-17",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-18",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-19",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-20",
+      "attribution":""
+    },
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-21",
+      "attribution":""
+    }
+  ],
+  "jansens":[
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-01",
+      "attribution":""
+    }
+  ],
+  "barbieries":[
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-01",
+      "attribution":""
+    }
+  ],
+  "deans":[
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-01",
+      "attribution":""
+    }
+  ],
+  "etcs":[
+    {
+      "img":"",
+      "thumb":"",
+      "title":"",
+      "description":"",
+      "id":"karn-01",
       "attribution":""
     }
   ]

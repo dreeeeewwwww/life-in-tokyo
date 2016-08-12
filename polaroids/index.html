@@ -3,6 +3,26 @@ title: Polaroids - Images
 layout: default
 nav: polaroids
 ---
+{% for polaroid in site.data.test.polaroids %}
+  <h2>{{ polaroid.name }}</h2>
+  {% for asset in polaroid.assets %}
+    <div id="thumb" class="col-md-1">
+      <img src="{{ asset.thumb }}" class="img-responsive" data-toggle="modal" data-target="#{{ asset.id }}" />
+    </div>
+    <div class="modal fade video-clip" id="{{ asset.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ asset.title }}">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <img src="{{ asset.img }}" class="img-responsive" />
+          <small>{{ asset.attribution }}</small>
+          <p>
+            {{ asset.title }}, {{ asset.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endfor %}
+
 <h1>Polaroids</h1>
 <h2>Band</h2>
 <div class="row row-bottom-60">
@@ -14,6 +34,7 @@ nav: polaroids
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <img src="{{ band.img }}" class="img-responsive" />
+          <small>{{ band.attribution }}</small>
           <p>
             {{ band.title }}, {{ band.description }}
           </p>
@@ -33,6 +54,7 @@ nav: polaroids
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <img src="{{ sylvian.img }}" class="img-responsive" />
+          <small>{{ sylvian.attribution }}</small>
           <p>
             {{ sylvian.title }}, {{ sylvian.description }}
           </p>
@@ -42,39 +64,29 @@ nav: polaroids
   {% endfor %}
 </div>
 
-
-
-<div class="row row-bottom-60">
-
-	
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_books.jpg" title="1981 (?)." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_booksT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_blurry.jpg" title="Photo by Fin Costello." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_blurryT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_makeup.jpg" title="Uhhh...wow." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_makeupT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_b01.jpg" title="Photo by Michael Putland." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_b01T.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_vogue.jpg" title="VOGUE!." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_vogueT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_japan_FLcover.jpg" title="Cover of Fan Library, 1982" class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_japan_thumbFLC.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_com.jpg" title="Photo by Fin Costello." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_comT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_jansen04.jpg" title="Recording Tin Drum with Steve Nye. Photo by Steve Jansen. www.stevejansen.com/imageshop." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_jansen04T.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_jansen03.jpg" title="Filming the Visions of China video. Photo by Steve Jansen. www.stevejansen.com/imageshop." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_jansen03T.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_jansen01.jpg" title="Photo by Steve Jansen." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_jansen01T.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_jansen02.jpg" title="Recording Bamboo Houses with Ryuichi Sakamoto. Photo by Steve Jansen. www.stevejansen.com/imageshop." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_jansen02T.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_tdalt.jpg" title="Alternate 'Tin Drum' cover. Photo by Fin Costello." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_tdaltT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_flmic.jpg" title="From Fan Library, 1982. p. 23. Photo by Fin Costello." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_flmicT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_smoking.jpg" title="From Fan Library, 1982. p. 34. Photo by Fin Costello." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_smokingT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_tourists.jpg" title="Photo by Fin Costello." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_touristsT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_bwguitar.jpg" title="From Fan Library, 1982. p. 39. Photo by Virginia Turbett." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_bwguitarT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_aop12.jpg" title="From The Art of Parties single. Photo by Steve Jansen." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_aop12T.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_rapport.jpg" title="From Fan Library, 1982. p. 37. Photo by Steve Rapport." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_rapportT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_corbijn.jpg" title="From, 'Oil on Canvas.' Photo by Anton Corbijn." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_corbijnT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_bam.jpg" title="From the Bamboo Music promo video, 1982." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_bamT.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_smash84.jpg" title="From Smash Hits, 1984." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_smash84T.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_b02.jpg" title="From Bamboo, Issue 12, 1987." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_b02T.jpg" border="0" /></a></div>
-	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_sylvian_opium01.jpg" title="Opium Arts postcard. Photo by Yuka Fujii (?). Thanks to Simon C. for the scan." class="thickbox menu_link" rel="sylvian"><img src="/assets/images/polaroids_sylvian_opium01T.jpg" border="0" /></a></div>
-</div>
-
 <h2>Mick Karn</h2>
 <div class="row row-bottom-60">
-  <div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_karn_7803.jpg" title="1978." class="thickbox menu_link" rel="mick"><img src="/assets/images/polaroids_karn_7803T.jpg" border="0" /></a></div>
+  {% for karn in site.data.polaroids.karns %}
+    <div id="thumb" class="col-md-1">
+      <img src="{{ karn.thumb }}" class="img-responsive" data-toggle="modal" data-target="#{{ karn.id }}" />
+    </div>
+    <div class="modal fade video-clip" id="{{ karn.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ karn.title }}">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <img src="{{ karn.img }}" class="img-responsive" />
+          <small>{{ karn.attribution }}</small>
+          <p>
+            {{ karn.title }}, {{ karn.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+<div class="row row-bottom-60">
+
 	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_karn_7801.jpg" title="From Music Life, March 1979." class="thickbox menu_link" rel="mick"><img src="/assets/images/karn_01thumb.jpg" border="0" /></a></div>
 	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_karn_7802.jpg" title="1979." class="thickbox menu_link" rel="mick"><img src="/assets/images/polaroids_karn_7802T.jpg" border="0" /></a></div>
 	<div id="thumb" class="col-md-1"><a href="/assets/images/polaroids_karn_scary.gif" title="From the 1980 Japanese tour book." class="thickbox menu_link" rel="mick"><img src="/assets/images/polaroids_karn_scaryT.gif" border="0" /></a></div>
