@@ -3,25 +3,30 @@ title: Polaroids - Images
 layout: default
 nav: polaroids
 ---
-<h1>Polaroids</h1>
-{% for polaroid in site.data.polaroids.polaroids %}
-  <h2>{{ polaroid.name }}</h2>
-  <div class="row row-bottom-60">
-    {% for asset in polaroid.assets %}
-      <div id="thumb" class="col-md-1">
-        <img src="{{ asset.thumb }}" class="img-responsive" data-toggle="modal" data-target="#{{ asset.id }}" />
+<div class="row row-bottom-60">
+  <h1>Polaroids</h1>
+  <div id="grid" data-columns>
+    {% for polaroid in site.data.polaroids.polaroids %}
+      <div>
+        <h2>{{ polaroid.name }}</h2>
       </div>
-      <div class="modal fade video-clip" id="{{ asset.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ asset.title }}">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <img src="{{ asset.img }}" class="img-responsive" />
-            <small>{{ asset.attribution }}</small>
-            <p>
-              {{ asset.title }}, {{ asset.description }}
-            </p>
+      {% for asset in polaroid.assets %}
+        <div>
+          <img src="{{ asset.img }}" class="img-responsive" data-toggle="modal" data-target="#{{ asset.id }}" />
+        </div>
+        <div class="modal fade video-clip" id="{{ asset.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ asset.title }}">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <img src="{{ asset.img }}" class="img-responsive" />
+              <small>{{ asset.attribution }}</small>
+              <p>
+                {{ asset.title }}, {{ asset.description }}
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      {% endfor %}
     {% endfor %}
   </div>
-{% endfor %}
+</div>
+{% include salvattore.html %}
