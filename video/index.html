@@ -3,6 +3,8 @@ title: Video
 layout: default
 nav: video
 scrollspy: true
+custom_js:
+- jquery.matchHeight.min.js
 ---
 <h1 class="sr-only">Video</h1>
 <div class="row">
@@ -54,6 +56,9 @@ scrollspy: true
 </div>
 
 <script type="text/javascript">
+  $(document).ready(function() {
+    $('.match-height').matchHeight();
+  });
   {% for video in site.categories.videos %}
     $("#{{ video.code }}").on('show.bs.modal', function(e) {
       $("#{{ video.code }} iframe").attr({'src':'https://www.youtube.com/embed/{{ video.code | url_escape }}'});
@@ -63,4 +68,3 @@ scrollspy: true
     });
   {% endfor %}
 </script>
-{% include match_height.html %}

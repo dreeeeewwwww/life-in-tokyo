@@ -18,6 +18,12 @@
     </div>
   </div>
 </div>
+{% include asset-path.html %}
+{% if page.custom_js %}
+  {% for js_file in page.custom_js %}
+    <script type="text/javascript" src="/assets/js/{{ js_file }}"></script>
+  {% endfor %}
+{% endif %}
 <script type="text/javascript">
   $("#nav-{{ page.nav }}").addClass("active");
 </script>

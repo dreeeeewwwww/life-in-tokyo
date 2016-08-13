@@ -3,6 +3,8 @@ title: Archive
 layout: default
 nav: archive
 scrollspy: true
+custom_js:
+- jquery.matchHeight.min.js
 ---
   <h1>Bamboo Fanzine</h1>
   <div class="row row-bottom-60 body-content">
@@ -154,4 +156,8 @@ scrollspy: true
       {% include menu_archive.html %}
     </div>
   </div>
-  {% include match_height.html %}
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.match-height').matchHeight();
+    });
+  </script>
