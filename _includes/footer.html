@@ -19,8 +19,8 @@
   </div>
 </div>
 {% include asset-path.html %}
-{% if page.custom_js %}
-  {% for js_file in page.custom_js %}
+{% if page.js_footer %}
+  {% for js_file in page.js_footer %}
     <script type="text/javascript" src="/assets/js/{{ js_file }}"></script>
   {% endfor %}
 {% endif %}

@@ -151,6 +151,68 @@ ul.affix{
     }
   }
 }
+/* IMAGES INDEX */
+.polaroid{
+  z-index:10000;
+  @include box-shadow(none !important);
+  background:$modal-transparent;
+
+  button.close{
+    color:$white;
+    text-shadow:none;
+    opacity:1;
+    position:absolute;
+    top:29px;
+    right:30px;
+    font-weight:500;
+    font-size:1em;
+  }
+  .modal-dialog{
+    @include box-shadow(none !important);
+    width:auto;
+    height:auto;
+    margin:0 auto;
+    position:absolute;
+    top:0;
+    left:0;
+    text-align:left;
+    border-bottom:1px solid #ccc;
+    background:transparent !important;
+    text-align:center;
+
+    .modal-content{
+      @include box-shadow(none !important);
+      border:none;
+      @include border-radius(0 !important);
+      background:transparent !important;
+
+      img{
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+
+    }
+  }
+}
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+.grid-item {
+  float: left;
+}
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+
 /* CSS3 FADEIN */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

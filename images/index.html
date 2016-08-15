@@ -2,22 +2,21 @@
 title: Images
 layout: default
 nav: polaroids
-custom_js:
-- salvattore.min.js
-- jquery.unveil.js
+js_footer:
+- isotope.pkgd.min.js
+- imagesloaded.pkgd.min.js
+- isotopeimagesloaded.js
 ---
 <div class="row row-bottom-60">
   <h1>Polaroids</h1>
-  <div id="grid" data-columns>
+  <div class="grid">
+    <div class="grid-sizer"></div>
     {% for polaroid in site.data.polaroids.polaroids %}
-      <div>
-        <h2>{{ polaroid.name }}</h2>
-      </div>
       {% for asset in polaroid.assets %}
-        <div>
+        <div class="grid-item">
           <img src="{{ base }}/assets/images/{{ asset.img }}" class="img-responsive" data-toggle="modal" data-target="#{{ asset.id }}" />
         </div>
-        <div class="modal fade video-clip" id="{{ asset.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ asset.title }}">
+        <div class="modal fade polaroid" id="{{ asset.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ asset.title }}">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <img src="{{ base }}/assets/images/{{ asset.img }}" class="img-responsive" />

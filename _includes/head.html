@@ -8,6 +8,11 @@
   <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} Life in Tokyo</title>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  {% if page.js_head %}
+    {% for js_file in page.js_head %}
+      <script type="text/javascript" src="/assets/js/{{ js_file }}"></script>
+    {% endfor %}
+  {% endif %}
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ base }}/assets/css/tokyo.css">
