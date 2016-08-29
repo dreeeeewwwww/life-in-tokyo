@@ -90,10 +90,6 @@ h2{
 ul.affix{
   top:30px;
 }
-/* POLAROIDS Page */
-#thumb{
-  margin-bottom:30px;
-}
 /* VIDEO Index */
 .video-item{
   color:$grey-9;
@@ -151,7 +147,7 @@ ul.affix{
     }
   }
 }
-/* IMAGES INDEX */
+/* IMAGES Index */
 .polaroid{
   z-index:10000;
   @include box-shadow(none !important);
@@ -190,9 +186,16 @@ ul.affix{
         margin-left:auto;
         margin-right:auto;
       }
-
-
     }
+  }
+}
+.card-polaroids{
+  border:none;
+  margin-bottom:20px;
+
+  .card-img{
+    width:100%;
+    cursor:pointer;
   }
 }
 .grid:after {
@@ -212,7 +215,6 @@ ul.affix{
   max-width: 100%;
 }
 
-
 /* CSS3 FADEIN */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -222,6 +224,42 @@ ul.affix{
   -moz-animation:fadeIn ease-in 0.5s;
   -o-animation: fadeIn ease-in 0.5s; /* Opera */
   animation:fadeIn ease-in 0.5s;
+}
+/* BS4 CARD GRID */
+@media (min-width: 400px) {
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+@media (min-width: 768px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+@media (min-width: 900px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+@media (min-width: 1200px) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+@media (min-width: 1500px) {
+    .card-columns {
+        -webkit-column-count: 5;
+        -moz-column-count: 5;
+        column-count: 5;
+    }
 }
 
 /* SALVATTORE GRID */
@@ -254,7 +292,6 @@ ul.affix{
 		content: '3 .column.size-1of3';
 	}
 }
-
 
 /* HELPERS */
 .row-bottom-15{margin-bottom:15px;}

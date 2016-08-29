@@ -1,33 +1,35 @@
 ---
 title: Images
 layout: default
-nav: polaroids
+nav: images
 js_footer:
-- isotope.pkgd.min.js
-- imagesloaded.pkgd.min.js
-- isotopeimagesloaded.js
+- navigation.js
+
 ---
 <div class="row row-bottom-60">
-  <h1>Polaroids</h1>
-  <div class="grid">
-    <div class="grid-sizer"></div>
-    {% for polaroid in site.data.polaroids.polaroids %}
-      {% for asset in polaroid.assets %}
-        <div class="grid-item">
-          <img src="{{ base }}/assets/images/{{ asset.img }}" class="img-responsive" data-toggle="modal" data-target="#{{ asset.id }}" />
-        </div>
-        <div class="modal fade polaroid" id="{{ asset.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ asset.title }}">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <img src="{{ base }}/assets/images/{{ asset.img }}" class="img-responsive" />
-              <small>{{ asset.attribution }}</small>
-              <p>
-                {{ asset.title }}, {{ asset.description }}
-              </p>
+  <div class="col-md-12">
+    <h1>Images</h1>
+
+      {% for polaroid in site.data.polaroids.polaroids %}
+        <div class="card-columns">
+          {% for asset in polaroid.assets %}
+            <div class="card card-polaroids">
+              <img src="{{ base }}/assets/images/{{ asset.img }}" class="card-img" data-toggle="modal" data-target="#{{ asset.id }}" />
             </div>
-          </div>
+            <div class="modal fade polaroid" id="{{ asset.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ asset.title }}">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <img src="{{ base }}/assets/images/{{ asset.img }}" class="img-responsive" />
+                  <small>{{ asset.attribution }}</small>
+                  <p>
+                    {{ asset.title }}, {{ asset.description }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
         </div>
       {% endfor %}
-    {% endfor %}
-  </div>
+    </div>
+
 </div>
