@@ -15,7 +15,7 @@ js_footer:
         <div class="row">
           {% for zine in site.categories.zines %}
             <div class="col-md-3 col-sm-3 col-xs-6 match-height">
-              <img src="{{ zine.img }}" class="img-responsive" />
+              <img src="{{ zine.img }}" class="img-fluid" />
               <p><a href="{{ zine.url }}">{{ zine.title }}</a><br />
               {{ zine.excerpt }}</p>
             </div>
@@ -29,7 +29,7 @@ js_footer:
           {% for book in site.categories.bookss %}
             <div class="col-md-3 col-sm-3 col-xs-6 match-height">
               <a href="{{ book.url }}">
-                <img src="{{ book.img }}" class="img-responsive" />
+                <img src="{{ book.img }}" class="img-fluid" />
                 <p>
                   {{ book.title }}</a><br />
                   {{ book.excerpt }}
@@ -46,7 +46,7 @@ js_footer:
           {% for magazine in site.categories.magazines %}
             <div class="col-md-3 col-sm-3 col-xs-6 match-height">
               <a href="{{ magazine.url }}">
-                <img src="{{ magazine.img }}" class="img-responsive" />
+                <img src="{{ magazine.img }}" class="img-fluid" />
                 <p>
                   {{ magazine.title }}</a><br />
                   {{ magazine.excerpt }}
@@ -63,7 +63,7 @@ js_footer:
           {% for program in site.categories.programs %}
             <div class="col-md-3 col-sm-3 col-xs-6 match-height">
               <a href="{{ program.url }}">
-                <img src="{{ program.img }}" class="img-responsive" />
+                <img src="{{ program.img }}" class="img-fluid" />
                 <p>
                   {{ program.title }}</a><br />
                   {{ program.excerpt }}
@@ -80,7 +80,7 @@ js_footer:
           {% for poster in site.categories.posters %}
             <div class="col-md-3 col-sm-3 col-xs-6 match-height">
               <a href="{{ poster.url }}">
-                <img src="{{ poster.img }}" class="img-responsive" />
+                <img src="{{ poster.img }}" class="img-fluid" />
                 <p>
                   {{ poster.title }}</a><br />
                   {{ poster.excerpt }}
@@ -97,7 +97,7 @@ js_footer:
           {% for merch in site.categories.merchs %}
             <div class="col-md-3 col-sm-3 col-xs-6 match-height">
               <a href="{{ merch.url }}">
-                <img src="{{ merch.img }}" class="img-responsive" />
+                <img src="{{ merch.img }}" class="img-fluid" />
                 <p>
                   {{ merch.title }}</a><br />
                   {{ merch.excerpt }}
@@ -114,7 +114,7 @@ js_footer:
           {% for article in site.categories.articles %}
             <div class="col-md-3 col-sm-3 col-xs-6 match-height">
               <a href="{{ article.url }}">
-                <img src="{{ article.img }}" class="img-responsive" />
+                <img src="{{ article.img }}" class="img-fluid" />
                 <p>
                   {{ article.title }}</a><br />
                   {{ article.excerpt }}
@@ -130,7 +130,7 @@ js_footer:
         <div class="row">
           {% for connection in site.categories.connections %}
             <div class="col-md-3 col-sm-3 col-xs-6 match-height">
-              <img src="{{ connection.img }}" class="img-responsive" />
+              <img src="{{ connection.img }}" class="img-fluid" />
               <p><a href="{{ connection.url }}">{{ connection.title }}</a><br />
               {{ connection.excerpt }}</p>
             </div>
