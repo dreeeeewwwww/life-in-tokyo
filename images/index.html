@@ -9,18 +9,24 @@ js_footer:
 <div class="row row-bottom-60">
   <div class="col-md-12">
     <h1>Images</h1>
-    {% for polaroid in site.data.polaroids.polaroids %}
+    {% assign polaroids = site.data.polaroids.polaroids | where: 'name', 1 %}
+    {% for polaroid in polaroids %}
+      {{ polaroid.name }}
       <div class="card-columns">
         {% for asset in polaroid.assets %}
           <div class="card card-polaroids">
             <img src="{{ base }}/assets/images/{{ asset.img }}" class="card-img img-fluid" data-toggle="modal" data-target="#{{ asset.id }}" />
           </div>
           <div class="modal fade polaroid" id="{{ asset.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ asset.title }}">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <img src="{{ base }}/assets/images/{{ asset.img }}" class="img-responsive" />
-                <small>{{ asset.attribution }}</small>
+                <div class="clearfix"></div>
+
                 <p>
+                  {{% if asset.attrubution != blank %}}
+                    <cite><i class="fa fa-camera" aria-hidden="true"></i> {{ asset.attribution }}</cite>
+                  {{% endif %}}
                   {{ asset.title }}, {{ asset.description }}
                 </p>
               </div>

@@ -165,15 +165,12 @@ ul.affix{
   }
   .modal-dialog{
     @include box-shadow(none !important);
-    width:auto;
     height:auto;
     margin:0 auto;
-    position:absolute;
-    top:0;
-    left:0;
     text-align:left;
-    border-bottom:1px solid #ccc;
-    background:transparent !important;
+    padding:30px;
+    top:30px;
+    background:$modal-transparent;
     text-align:center;
 
     .modal-content{
