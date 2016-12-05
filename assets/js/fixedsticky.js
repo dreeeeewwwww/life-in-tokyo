@@ -192,5 +192,5 @@
 
 })( window, jQuery );
 $(function() {
-  $( '.sticky' ).fixedsticky();
+  $( '.fixedsticky' ).fixedsticky();
 });

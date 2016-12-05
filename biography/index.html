@@ -4,16 +4,16 @@ layout: default
 nav: biography
 scrollspy: true
 js_head:
-- stickyfill.min.js
+- fixedsticky.js
 js_footer:
 - navigation.js
 ---
-<div class="container">
+
   <div class="row row-bottom-60">
-    <div class="col-md-8 col-sm-8 col-xs-10 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
+    <div class="col-md-8 col-sm-12 col-xs-12">
 
       <section id="children">
-        <img  src="/assets/images/biography_glam.jpg" /><br />Japan in 1978. Mick Karn, Rob Dean, David Sylvian, Richard Barbieri and Steve Jansen.
+        <img class="img-fluid" src="/assets/images/biography_glam.jpg" /><br />Japan in 1978. Mick Karn, Rob Dean, David Sylvian, Richard Barbieri and Steve Jansen.
         <h1>CHILDREN OF GLAM</h1><br />
         <h2>1974 - 1978</h2>
           <p>
@@ -42,7 +42,7 @@ js_footer:
       </section>
 
     <section id="quiet">
-    <img src="/assets/images/biography_moroder.jpg" /><br />In the studio with Moroder, Los Angeles 1979.
+    <img class="img-fluid" src="/assets/images/biography_moroder.jpg" /><br />In the studio with Moroder, Los Angeles 1979.
     <h1>A QUIET LIFE IN TOKYO</h1><br /><h2>1979 - 1980</h2>
       <p>
         Aligning themselves with disco czar Giorgio Moroder, the 1979 single "Life in Tokyo" marked a major turning point for Japan. Already
@@ -69,7 +69,7 @@ js_footer:
     </section>
 
     <section id="new-romance">
-      <img src="/assets/images/biography_backstage.jpg" /><br />Sylvian, Karn, Barbieri, Jansen and guitarist Masami Tsuchyia backstage during the "Sons of Pioneers" tour, 1982.
+      <img class="img-fluid" src="/assets/images/biography_backstage.jpg" /><br />Sylvian, Karn, Barbieri, Jansen and guitarist Masami Tsuchyia backstage during the "Sons of Pioneers" tour, 1982.
       <h1>KINGS OF NEW ROMANCE</h1><br /><h2>1980 - 1982</h2>
         <p>
           Picking up musically where "Quiet Life," and visually where "I Second that Emotion" left off, their next album, 1980"s "Gentlemen Take 					Polaroids," marked another exponential leap in style and substance. Their first of two albums on Virgin Records, "Gentlemen Take
@@ -166,8 +166,7 @@ js_footer:
 
 
     </div>
-    <div class="col-md-3 col-md-offset-1">
+    <div class="col-md-3 h-100">
       {% include menu_bio.html %}
     </div>
   </div>
-</div>
