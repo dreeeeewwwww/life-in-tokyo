@@ -4,13 +4,13 @@ layout: default
 nav: biography
 scrollspy: true
 js_head:
-- fixedsticky.js
-js_footer:
 - navigation.js
+js_footer:
+- tether_menu.js
 ---
 
   <div class="row row-bottom-60">
-    <div class="col-md-8 col-sm-12 col-xs-12">
+    <div class="col-md-8 col-sm-12 col-xs-12 target">
 
       <section id="children">
         <img class="img-fluid" src="/assets/images/biography_glam.jpg" /><br />Japan in 1978. Mick Karn, Rob Dean, David Sylvian, Richard Barbieri and Steve Jansen.
@@ -166,7 +166,7 @@ js_footer:
 
 
     </div>
-    <div class="col-md-3 h-100">
+    <div class="col-md-3">
       {% include menu_bio.html %}
     </div>
   </div>
