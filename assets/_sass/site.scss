@@ -62,7 +62,7 @@ footer{
 }
 ul.sidebar-menu{
   list-style:none;
-  margin:0 0 30px 0;
+  margin:0 0 30px 30px;
   padding:30px 0 0 0;
   border-top:5px solid $rose;
 
@@ -86,6 +86,12 @@ h1{
 h2{
   font-weight:800;
   font-size:1.25em;
+}
+cite{
+  color:$grey-9;
+  margin-bottom:30px;
+  font-style:italic;
+  display:block;
 }
 /* VIDEO Index */
 .video-item{
@@ -144,6 +150,15 @@ h2{
     }
   }
 }
+/* BIOGRAPHY */
+.biography{
+  h2{
+    margin-bottom:30px;
+    color:$grey-9;
+    font-weight:400;
+  }
+}
+
 /* IMAGES Index */
 .polaroid{
   z-index:10000;

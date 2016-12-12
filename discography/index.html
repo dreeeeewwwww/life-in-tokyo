@@ -12,64 +12,14 @@ js_footer:
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <h2>japan</h2>
     </div>
-    {% for discog in site.tags.discog-japan %}
+    {% assign sorted = (site.tags.discog-japan | sort: 'date') %}
+    {% for discog in sorted %}
       {% include tag_discog.html %}
     {% endfor %}
   </section>
 </div>
 
-
-
-			<div id="newsitems">
-			<br />
-			<span class="h1">JAPAN</span> <span class="h2">- <i>Albums</i></span>
-				<br />
-				<br />
-				<table class="bodycopy" width="520" border="0">
-					<tr class="discoglink">
-
-						<td width="10%" align="left" valign="top"><font color="#999999">1978</font></td>
-  						<td width="55%" align="left" valign="top"><a href="discography_AdolescentSex.html">Adolescent Sex</a></td>
-  						<td width="35%" align="left" valign="top"><span class="discography_verdana">Ariola Hansa AHAL 8004</span></td>
-
- 					</tr>
-					<tr>
-  						<td width="10%" align="left" valign="top"><font color="#999999">1978</font></td>
-  						<td width="55%" align="left" valign="top"><a href="discography_ObscureAlternatives.html">Obscure Alternatives</a></td>
-  						<td width="35%" align="left" valign="top"><span class="discography_verdana">Ariola Hansa AHAL 8007</span></td>
- 					</tr>
-					<tr>
-  						<td width="10%" align="left" valign="top"><font color="#999999">1979</font></td>
-  						<td width="55%" align="left" valign="top"><a href="discography_QuietLife.html">Quiet Life</a></td>
-  						<td width="35%" align="left" valign="top"><span class="discography_verdana">Ariola Hansa AHAL 8010</span></td>
- 					</tr>
-					<tr>
-  						<td width="10%" align="left" valign="top"><font color="#999999">1980</font></td>
-  						<td width="55%" align="left" valign="top"><a href="discography_GentlemenTakePolaroids.html">Gentlemen Take Polaroids</a></td>
-  						<td width="35%" align="left" valign="top"><span class="discography_verdana">Virgin V2180</span></td>
- 					</tr>
-					<tr>
-  						<td width="10%" align="left" valign="top"><font color="#999999">1981</font></td>
-  						<td width="55%" align="left" valign="top"><a href="discography_TinDrum.html">Tin Drum</a></td>
-  						<td width="35%" align="left" valign="top"><span class="discography_verdana">Virgin V2209</span></td>
- 					</tr>
-					<tr>
-  						<td width="10%" align="left" valign="top"><font color="#999999">1983</font></td>
-  						<td width="55%" align="left" valign="top"><a href="discography_OilonCanvas.html">Oil on Canvas</a></td>
-  						<td width="35%" align="left" valign="top"><span class="discography_verdana">Virgin VD2513</span></td>
- 					</tr>
-					<tr>
-  						<td width="10%" align="left" valign="top"><font color="#999999">1991</font></td>
-  						<td width="55%" align="left" valign="top"><a href="discography_RainTreeCrow.html">Rain Tree Crow - "Rain Tree Crow"</a></td>
-  						<td width="35%" align="left" valign="top"><span class="discography_verdana">Virgin V2659</span></td>
- 					</tr>
-				</table>
-
-			<br />
-			<br />
-			</div>
-
-			<div id="newsitems">
+<div id="newsitems">
 			<br />
 			<span class="h1">JAPAN</span> <span class="h2">- <i>Selected Compilations</i></span>
 				<br />
