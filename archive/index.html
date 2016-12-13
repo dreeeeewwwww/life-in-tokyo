@@ -6,6 +6,7 @@ scrollspy: true
 js_footer:
 - jquery.matchHeight.min.js
 - tether_menu.js
+- tooltip.js
 ---
 <div class="row row-bottom-60 body-content">
   <div class="col-md-8 col-sm-8 col-xs-12 target">
@@ -15,28 +16,36 @@ js_footer:
         <div class="col-md-12">
           <h2 class="m-b-3">{{ archive.name }}</h2>
         </div>
-        {% for content in archive.contents %}
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 modal-item margin-bottom-30">
-            <img src="{{ content.img_thumb }}" class="img-fluid archive-item margin-bottom-15" data-toggle="modal" data-target="#issue-{{ content.issue }}" />
-            <p>
-              <span data-toggle="modal" data-target="#issue-{{ content.issue }}">
-                <strong>Issue {{ content.issue }}</strong><br />
-                {{ content.month }} {{ content.year }}
-              </span>
-              {% if content.url_download != null %}
-                <a href="{{ content.url_download}}" class="float-md-right" style="padding-right:5px;"><i class="fa fa-file-pdf-o" aria-hidden="true" title="Downlad Bamboo Issue {{ content.issue }} PDF"></i></a>
-              {% endif %}
-            </p>
-          </div>
-          <div class="modal fade video-clip" id="issue-{{ content.issue }}" tabindex="-1" role="dialog" aria-labelledby="issue-{{ content.issue }}">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <img src="{{ content.img_original }}" class="img-fluid" />
-                {{ content.title }}
+        {% if archive.id == "bamboo" %}
+          {% for content in archive.contents %}
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 modal-item margin-bottom-30">
+              <img src="{{ content.img_thumb }}" class="img-fluid archive-item margin-bottom-15" title="Bamboo Fanzine Issue {{ content.issue }}, {{ content.month }} {{ content.year }}" data-toggle="modal" data-target="#issue-{{ content.issue }}" />
+              <p>
+                <span title="Bamboo Fanzine Issue {{ content.issue }}, {{ content.month }} {{ content.year }}" data-toggle="modal" data-target="#issue-{{ content.issue }}">
+                  <strong>Issue {{ content.issue }}</strong><br />
+                  {{ content.month }} {{ content.year }}
+                </span>
+                {% if content.url_download != null %}
+                  <a href="{{ content.url_download}}" target="_blank" class="float-md-right" style="padding-right:5px;" data-toggle="tooltip" data-placement="right" title="Download PDF"><i class="fa fa-file-pdf-o" aria-hidden="true" title="Downlad Bamboo Issue {{ content.issue }} PDF"></i></a>
+                {% endif %}
+              </p>
+            </div>
+            <div class="modal fade video-clip" id="issue-{{ content.issue }}" tabindex="-1" role="dialog" aria-labelledby="issue-{{ content.issue }}">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <img src="{{ content.img_original }}" class="img-fluid" />
+                  {{ content.title }}
+                </div>
               </div>
             </div>
-          </div>
-        {% endfor %}
+          {% endfor %}
+        {% elsif archive.id == "books" %}
+          {% for content in archive.contents %}
+            hello {{ content.title }}
+          {% endfor %}
+        {% else %}
+          foo
+        {% endif %}
       </div>
     </section>
     {% endfor %}
