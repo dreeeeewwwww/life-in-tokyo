@@ -80,7 +80,7 @@ ul.sidebar-menu{
     a.nav-link{
       color:$grey-9;
     }
-    a.nav-link.active{
+    a.active{
       color:$body;
       font-weight:800;
     }
@@ -285,37 +285,6 @@ cite{
         -moz-column-count: 5;
         column-count: 5;
     }
-}
-
-/* SALVATTORE GRID */
-#grid[data-columns]::before {
-	content: '3 .column.size-1of3';
-}
-#grid{
-  .column {
-    float: left;
-    img{
-      padding:5px;
-    }
-  }
-  .size-1of1 { width: 100%; }
-  .size-1of2 { width: 50%; }
-  .size-1of3 { width: 33.333%; }
-}
-@media screen and (max-width: 767px){
-	#grid[data-columns]::before {
-		content: '1 .column.size-1of1';
-	}
-}
-@media screen and (min-width: 768px) and (max-width: 989px) {
-	#grid[data-columns]::before {
-		content: '2 .column.size-1of2';
-	}
-}
-@media screen and (min-width: 990px) {
-	#grid[data-columns]::before {
-		content: '3 .column.size-1of3';
-	}
 }
 
 /* HELPERS */
