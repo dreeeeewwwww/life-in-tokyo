@@ -7,12 +7,50 @@ js_footer:
 - jquery.matchHeight.min.js
 - tether_menu.js
 ---
+<div class="row row-bottom-60 body-content">
+  <div class="col-md-8 col-sm-8 col-xs-12 target">
+    {% for archive in site.data.archives.archives %}
+    <section id="{{ archive.id }}">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="m-b-3">{{ archive.name }}</h2>
+        </div>
+        {% for content in archive.contents %}
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 modal-item margin-bottom-30">
+            <img src="{{ content.img_thumb }}" class="img-fluid archive-item margin-bottom-15" data-toggle="modal" data-target="#issue-{{ content.issue }}" />
+            <p>
+              <span data-toggle="modal" data-target="#issue-{{ content.issue }}">
+                <strong>Issue {{ content.issue }}</strong><br />
+                {{ content.month }} {{ content.year }}
+              </span>
+              {% if content.url_download != null %}
+                <a href="{{ content.url_download}}" class="float-md-right" style="padding-right:5px;"><i class="fa fa-file-pdf-o" aria-hidden="true" title="Downlad Bamboo Issue {{ content.issue }} PDF"></i></a>
+              {% endif %}
+            </p>
+          </div>
+          <div class="modal fade video-clip" id="issue-{{ content.issue }}" tabindex="-1" role="dialog" aria-labelledby="issue-{{ content.issue }}">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <img src="{{ content.img_original }}" class="img-fluid" />
+                {{ content.title }}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endfor %}
+  </div>
+</div>
+
   <h1>Bamboo Fanzine</h1>
   <div class="row row-bottom-60 body-content">
-    <div class="col-md-8 col-sm-8 col-xs-12 target">
+    <div class="col-md-8 col-sm-8 col-xs-12 ">
 
 
-      <section id="bamboo">
+
+
+      <section id="bambo">
         <div class="row">
           {% for zine in site.categories.zines %}
             <div class="col-md-3 col-sm-3 col-xs-6 match-height">
@@ -24,7 +62,7 @@ js_footer:
         </div>
       </section>
 
-      <section id="books">
+      <section id="book">
         <h1>Books</h1>
         <div class="row">
           {% for book in site.categories.bookss %}

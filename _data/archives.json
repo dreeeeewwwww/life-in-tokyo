@@ -1,0 +1,87 @@
+{
+  "archives":[
+    {
+    "name":"Bamboo Fanzine",
+    "id":"bamboo",
+      "contents":[
+        {
+          "layout":"archive-show",
+          "permalink":"/zines/bamboo-issue-one",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_download":"foo",
+          "issue":"1",
+          "month":"July",
+          "year":"1982",
+          "title":"Bamboo one",
+          "excerpt":"foo 2"
+        },
+        {
+          "layout":"archive-show",
+          "permalink":"archive/zines/bamboo-issue-two",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_download":,
+          "issue":"2",
+          "month":"July",
+          "year":"1982",
+          "title":"Bamboo Two",
+          "excerpt":"foo"
+        },
+        {
+          "layout":"archive-show",
+          "permalink":"archive/zines/bamboo-issue-three",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_download":"test",
+          "issue":"3",
+          "month":"July",
+          "year":"1982",
+          "title":"Bamboo Three",
+          "excerpt":"foo"
+        },
+        {
+          "layout":"archive-show",
+          "permalink":"/archive/zines/bamboo-issue-four",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_download":,
+          "issue":"4",
+          "month":"July",
+          "year":"1982",
+          "title":"Bamboo Four",
+          "excerpt":"foo"
+        },
+      ]
+    },
+    {
+    "name":"Books",
+    "id":"books",
+      "contents":[
+        {
+          "layout":"archive-show",
+          "permalink":"/zines/bamboo-issue-two",
+          "img":"http://s3.amazonaws.com/quietus_production/images/articles/11816/David_Sylvian_550_1364732772_crop_550x365.jpg",
+          "number":"2",
+          "month":"July",
+          "year":"1982",
+          "title":"Book one",
+          "excerpt":"foo 2"
+        },
+        {
+          "layout":"archive-show",
+          "permalink":"/zines/bamboo-issue-one",
+          "img":"http://s3.amazonaws.com/quietus_production/images/articles/11816/David_Sylvian_550_1364732772_crop_550x365.jpg",
+          "number":"1",
+          "month":"July",
+          "year":"1982",
+          "title":"Another book",
+          "excerpt":"foo"
+        },
+        {
+          "firstName":"this is another name"
+        }
+      ]
+    }
+  ]
+}
