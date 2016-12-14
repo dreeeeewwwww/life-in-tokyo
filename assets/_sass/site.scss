@@ -139,7 +139,7 @@ cite{
   .modal-dialog{
     @include box-shadow(none !important);
     @include border-radius(3px);
-    width:600px;
+    /*width:600px;
     position:absolute;
     top:60px;
     left:50%;
@@ -147,7 +147,7 @@ cite{
     text-align:left;
     padding:30px;
     background-color:$white;
-    border-bottom:1px solid #ccc;
+    border-bottom:1px solid #ccc;*/
 
     .modal-content{
       @include box-shadow(none !important);

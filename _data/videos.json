@@ -1,0 +1,98 @@
+{
+  "videos":[
+    {
+    "name":"Promo Clips",
+    "id":"promo",
+      "contents":[
+        {
+          "embed":"WhC8LnFd2LE",
+          "title":"Visions of China",
+          "description":"foo",
+          "body":,
+          "artist":,
+          "album":,
+          "song":,
+          "year":,
+          "day":,
+          "month":,
+          "show":,
+          "venue":
+        },
+        {
+          "embed":"WhC8LnFd2LE",
+          "title":"Visions of China",
+          "description":"foo",
+          "body":,
+          "artist":,
+          "album":,
+          "song":,
+          "year":,
+          "day":,
+          "month":,
+          "show":,
+          "venue":
+        },
+      ]
+    },
+    {
+    "name":"Live / Television",
+    "id":"live-tv",
+      "contents":[
+        {
+          "embed":"WhC8LnFd2LE",
+          "title":"Visions of China",
+          "description":"foo",
+          "body":,
+          "artist":,
+          "album":,
+          "song":,
+          "year":,
+          "day":,
+          "month":,
+          "show":,
+          "venue":
+        },
+      ]
+    },
+    {
+    "name":"Solo Projects",
+    "id":"solo",
+      "contents":[
+        {
+          "embed":"WhC8LnFd2LE",
+          "title":"Visions of China",
+          "description":"foo",
+          "body":,
+          "artist":,
+          "album":,
+          "song":,
+          "year":,
+          "day":,
+          "month":,
+          "show":,
+          "venue":
+        },
+      ]
+    },
+    {
+    "name":"Interviews",
+    "id":"interviews",
+      "contents":[
+        {
+          "embed":"WhC8LnFd2LE",
+          "title":"Visions of China",
+          "description":"foo",
+          "body":,
+          "artist":,
+          "album":,
+          "song":,
+          "year":,
+          "day":,
+          "month":,
+          "show":,
+          "venue":
+        },
+      ]
+    }
+  ]
+}

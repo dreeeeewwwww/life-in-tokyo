@@ -8,6 +8,45 @@ js_footer:
 - jquery.matchHeight.min.js
 - tether_menu.js
 ---
+
+
+<div class="row row-bottom-60 body-content">
+  <div class="col-md-8 col-sm-8 col-xs-12 target">
+    {% for video in site.data.videos.videos %}
+    <section id="{{ video.id }}">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="m-b-3">{{ video.name }}</h2>
+        </div>
+        {% for content in video.contents %}
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 modal-item match-height row-bottom-30">
+            <img src="http://img.youtube.com/vi/{{ content.embed }}/hqdefault.jpg" class="img-fluid row-bottom-15" data-toggle="modal" data-target="#{{ content.embed }}" />
+            {% if video.id == "promo" %}
+              <p>
+                <strong>{{ content.title }}</strong><br />
+                {{ content.description }}
+              </p>
+            {% else %}
+              foo
+            {% endif %}
+          </div>
+          <div class="modal fade video-clip" id="{{ content.embed }}" tabindex="-1" role="dialog" aria-labelledby="{{ content.embed }}">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="embed-responsive embed-responsive-4by3 row-bottom-30">
+                  <iframe class="embed-responsive-item" width="420" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+                {{ content.description }}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endfor %}
+  </div>
+</div>
+
 <h1 class="sr-only">Video</h1>
 <div class="row">
   <div class="col-md-8 target">
