@@ -5,51 +5,51 @@
     "id":"bamboo",
       "contents":[
         {
-          "layout":"archive-show",
-          "permalink":"/zines/bamboo-issue-one",
+          "id":"bamboo-1",
           "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
           "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
-          "url_download":"foo",
+          "url_action":"foo",
           "issue":"1",
           "month":"July",
           "year":"1982",
           "title":"Bamboo one",
+          "author":"",
           "excerpt":"foo 2"
         },
         {
-          "layout":"archive-show",
-          "permalink":"archive/zines/bamboo-issue-two",
+          "id":"bamboo-2",
           "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
           "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
-          "url_download":,
+          "url_action":,
           "issue":"2",
           "month":"July",
           "year":"1982",
           "title":"Bamboo Two",
+          "author":"",
           "excerpt":"foo"
         },
         {
-          "layout":"archive-show",
-          "permalink":"archive/zines/bamboo-issue-three",
+          "id":"bamboo-3",
           "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
           "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
-          "url_download":"test",
+          "url_action":"test",
           "issue":"3",
           "month":"July",
           "year":"1982",
           "title":"Bamboo Three",
+          "author":"",
           "excerpt":"foo"
         },
         {
-          "layout":"archive-show",
-          "permalink":"/archive/zines/bamboo-issue-four",
+          "id":"bamboo-4",
           "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
           "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
-          "url_download":,
+          "url_action":,
           "issue":"4",
           "month":"July",
           "year":"1982",
           "title":"Bamboo Four",
+          "author":"",
           "excerpt":"foo"
         },
       ]
@@ -59,28 +59,149 @@
     "id":"books",
       "contents":[
         {
-          "layout":"archive-show",
-          "permalink":"/zines/bamboo-issue-two",
-          "img":"http://s3.amazonaws.com/quietus_production/images/articles/11816/David_Sylvian_550_1364732772_crop_550x365.jpg",
-          "number":"2",
-          "month":"July",
+          "id":"book-a-foreign-place",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_action":"buy",
           "year":"1982",
-          "title":"Book one",
-          "excerpt":"foo 2"
+          "ISBN":,
+          "title":"Japan: A Foreign Place (The Biography 1974-1984)",
+          "author":"Anthony Reynolds",
+          "excerpt":"foo",
+          "body":"",
         },
         {
-          "layout":"archive-show",
-          "permalink":"/zines/bamboo-issue-one",
-          "img":"http://s3.amazonaws.com/quietus_production/images/articles/11816/David_Sylvian_550_1364732772_crop_550x365.jpg",
-          "number":"1",
-          "month":"July",
+          "id":"book-tourists-guide-to-japan",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_action":"buy",
           "year":"1982",
-          "title":"Another book",
-          "excerpt":"foo"
+          "ISBN":,
+          "title":"A Tourists Guide to Japan",
+          "author":"Arthur A. Pitt",
+          "excerpt":"foo",
+          "body":
+        },
+      ]
+    },
+    {
+    "name":"Magazines",
+    "id":"magazines",
+      "contents":[
+        {
+          "id":"magazine-fan-library",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_action":"buy",
+          "year":"1982",
+          "ISBN":,
+          "title":"Japan: Fan Library",
+          "author":"Anthony",
+          "excerpt":"foo",
+          "body":"",
         },
         {
-          "firstName":"this is another name"
-        }
+          "id":"magazine-ongaku-senka",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_action":"buy",
+          "year":"1982",
+          "ISBN":,
+          "title":"Ongaku Senka",
+          "author":"",
+          "excerpt":"foo",
+          "body":
+        },
+      ]
+    },
+    {
+    "name":"Tour Programs",
+    "id":"tour",
+      "contents":[
+        {
+          "id":"tour-sons-of-pioneers",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_action":"buy",
+          "year":"1982",
+          "ISBN":,
+          "title":"Japan: Fan Library",
+          "author":"Anthony",
+          "excerpt":"foo",
+          "body":"",
+        },
+        {
+          "id":"tour-visions-of-china",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_action":"buy",
+          "year":"1982",
+          "ISBN":,
+          "title":"Ongaku Senka",
+          "author":"",
+          "excerpt":"foo",
+          "body":
+        },
+      ]
+    },
+    {
+    "name":"Posters",
+    "id":"posters",
+      "contents":[
+        {
+          "id":"poster-1",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_action":"buy",
+          "year":"1982",
+          "ISBN":,
+          "title":"Japan: Fan Library",
+          "author":"Anthony",
+          "excerpt":"foo",
+          "body":"",
+        },
+        {
+          "id":"poster-2",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_action":"buy",
+          "year":"1982",
+          "ISBN":,
+          "title":"Ongaku Senka",
+          "author":"",
+          "excerpt":"foo",
+          "body":
+        },
+      ]
+    },
+    {
+    "name":"Merchandise",
+    "id":"merch",
+      "contents":[
+        {
+          "id":"merch-1",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_action":"buy",
+          "year":"1982",
+          "ISBN":,
+          "title":"Japan: Fan Library",
+          "author":"Anthony",
+          "excerpt":"foo",
+          "body":"",
+        },
+        {
+          "id":"merch-2",
+          "img_original":"http://4.bp.blogspot.com/-PphjBz6IHCo/U1EgkHQle2I/AAAAAAAAAdk/ZmzcwM_m_34/s1600/877f1755437ddbf0acbf6110c7b81e1e.jpg",
+          "img_thumb":"https://s-media-cache-ak0.pinimg.com/236x/86/65/0b/86650b9bc586a93a30fd4ffff440c980.jpg",
+          "url_action":"buy",
+          "year":"1982",
+          "ISBN":,
+          "title":"Ongaku Senka",
+          "author":"",
+          "excerpt":"foo",
+          "body":
+        },
       ]
     }
   ]
