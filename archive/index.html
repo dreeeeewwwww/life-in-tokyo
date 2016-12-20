@@ -6,11 +6,11 @@ scrollspy: true
 js_footer:
 - jquery.matchHeight.min.js
 - jquery.matchHeight.init.js
-- tether_menu.js
 - tooltip.js
+- tether_menu.js
 ---
 <div class="row row-bottom-60 body-content">
-  <div class="col-md-8 col-sm-8 col-xs-12 target">
+  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 target">
     {% for archive in site.data.archives.archives %}
     <section id="{{ archive.id }}">
       <div class="row">
@@ -18,7 +18,7 @@ js_footer:
           <h2 class="m-b-3">{{ archive.name }}</h2>
         </div>
         {% for content in archive.contents %}
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 modal-item margin-bottom-30">
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 modal-item margin-bottom-30">
             {% if archive.id == "bamboo" %}
               <img src="{{ content.img_thumb }}" class="img-fluid archive-item margin-bottom-15" title="Bamboo Fanzine Issue {{ content.issue }}, {{ content.month }} {{ content.year }}" data-toggle="modal" data-target="#issue-{{ content.issue }}" />
               <p>
@@ -63,6 +63,9 @@ js_footer:
       </div>
     </section>
     {% endfor %}
+  </div>
+  <div class="col-lg-3 col-md-3 hidden-sm-down">
+    {% include menu_archive.html %}
   </div>
 </div>
 
@@ -114,7 +117,5 @@ js_footer:
       </section>
 
     </div>
-    <div class="col-md-3 col-md-offset-1">
-      {% include menu_archive.html %}
-    </div>
+
   </div>
