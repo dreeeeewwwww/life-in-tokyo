@@ -203,6 +203,25 @@
           "body":
         },
       ]
+    },
+    {
+    "name":"Tour History",
+    "id":"tour-history",
+      "contents":[
+        {
+          "id":"tour-sons-of-pioneers",
+          "url_action":,
+          "title":"Japan: Fan Library",
+          "excerpt":"foo",
+          "body":"foo",
+          "year":"1982",
+          "month":"01",
+          "day":"12",
+          "venue":"Hammersmith Apollo",
+          "price":
+        },
+
+      ]
     }
   ]
 }
