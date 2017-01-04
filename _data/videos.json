@@ -130,6 +130,20 @@
           "venue":
         },
         {
+          "embed":"7zzLU1ato2w",
+          "title":"Top of the Pops 1982.03.18",
+          "description":"Ghosts",
+          "body":"body",
+          "artist":"Japan",
+          "album":"Tin Drum",
+          "song":"Ghosts",
+          "year":"1982",
+          "day":"18",
+          "month":"03",
+          "show":"Top of the Pops",
+          "venue":
+        },
+        {
           "embed":"m2MZemED52M",
           "title":"Megahertz? Live in Paris",
           "description":"Gentlemen Take Polaroids",
@@ -141,6 +155,34 @@
           "day":"11",
           "month":"10",
           "show":"Megahertz",
+          "venue":
+        },
+        {
+          "embed":"5PA1PUpC1Ts",
+          "title":"Oxford Road Show",
+          "description":"Visions of China",
+          "body":"body",
+          "artist":"Japan",
+          "album":"Tin Drum",
+          "song":"Visions of China",
+          "year":"1981",
+          "day":"20",
+          "month":"11",
+          "show":"Oxford Road Show",
+          "venue":
+        },
+        {
+          "embed":"8JF25k0Rm0k",
+          "title":"Oxford Road Show",
+          "description":"Quiet Life",
+          "body":"body",
+          "artist":"Japan",
+          "album":"Quiet Life",
+          "song":"Quiet Life",
+          "year":"1981",
+          "day":"20",
+          "month":"11",
+          "show":"Oxford Road Show",
           "venue":
         },
         {
@@ -176,12 +218,61 @@
           "show":"Town 5",
           "venue":
         },
+        {
+          "embed":"sMezvZyf-h8",
+          "title":"Adolescent Sex",
+          "description":"Dutch TV TopPop",
+          "body":
+          "
+            <p>Dutch TV.</p>
+            <ul>
+              <li>Track title</li>
+              <li>Track title</li>
+            </ul>
+          ",
+          "artist":"Japan",
+          "album":"Adolescent Sex",
+          "song":"Adolescent Sex",
+          "year":"1979",
+          "day":"17",
+          "month":"02",
+          "show":"TopPop",
+          "venue":
+        },
       ]
     },
     {
-    "name":"Solo Projects",
+    "name":"Solo",
     "id":"solo",
       "contents":[
+        {
+          "embed":"MMaXZxPTUBY",
+          "title":"Dalis Car [Mick Karn &amp; Peter Murphy]",
+          "description":"The Judgement is the Mirror promo clip",
+          "body":"body",
+          "artist":"Dalis Car",
+          "album":"The Waking Hour",
+          "song":"The Judgement is the Mirror",
+          "year":,
+          "day":,
+          "month":,
+          "show":,
+          "venue":
+        },
+        {
+          "embed":"bp-qt5gRqA4",
+          "title":"Dalis Car [Mick Karn &amp; Peter Murphy]",
+          "description":"His Box Old Grey Whistle Test",
+          "body":"body",
+          "artist":"Dalis Car",
+          "album":"The Waking Hour",
+          "song":"His Box",
+          "year":,
+          "day":,
+          "month":,
+          "show":"Old Grey Whistle Test",
+          "venue":
+        },
         {
           "embed":"ZMEV04s---Q",
           "title":"Dolphin Brothers",
@@ -210,6 +301,104 @@
           "show":,
           "venue":
         },
+        {
+          "embed":"x1YkHJJi-tc",
+          "title":"Sylvian &amp; Sakamoto",
+          "description":"Forbidden Colors promo video",
+          "body":"Body",
+          "artist":"David Sylvian & Ryuichi Sakamoto",
+          "album":"Merry Christmas Mr. Lawrence",
+          "song":"Forbidden Colors",
+          "year":"198x",
+          "day":,
+          "month":,
+          "show":,
+          "venue":
+        },
+        {
+          "embed":"uRHoKJZGiJM",
+          "title":"David Sylvian on Riverside",
+          "description":"The Other Side of Life acoustic",
+          "body":"Body",
+          "artist":"David Sylivan",
+          "album":,
+          "song":,
+          "year":"1983",
+          "day":"01",
+          "month":"17",
+          "show":"Riverside",
+          "venue":
+        },
+        {
+          "embed":"W14YmRABFFg",
+          "title":"Mick Karn &amp; Angie Bowie",
+          "description":"Poetry thing on OGWT",
+          "body":"Body",
+          "artist":"Mick Karn",
+          "album":,
+          "song":,
+          "year":"1982",
+          "day":"03",
+          "month":"11",
+          "show":"Old Grey Whistle Test",
+          "venue":
+        },
+        {
+          "embed":"mveB-sh4xsk",
+          "title":"Mick Karn w/ Kate Bush",
+          "description":"Prince's Trust live show with Kate Bush, Pete Townshend, Midge Ure, and Phil Collins.",
+          "body":"Body",
+          "artist":"Mick Karn, Kate Bush",
+          "album":"Never for Ever",
+          "song":"The Wedding List",
+          "year":"1982",
+          "day":,
+          "month":,
+          "show":"Prince's Trust",
+          "venue":
+        },
+        {
+          "embed":"80UfK73RgIY",
+          "title":"David Sylvian",
+          "description":"Red Guitar promo clip. Dir. Anton Corbijn, f/ Angus McBean.",
+          "body":"Body",
+          "artist":"David Sylvian",
+          "album":"Brilliant Trees",
+          "song":"Red Guitar",
+          "year":"1984",
+          "day":,
+          "month":,
+          "show":,
+          "venue":
+        },
+        {
+          "embed":"Y9LWfVjXXAU",
+          "title":"David Sylvian",
+          "description":"The Ink in the Well promo clip.",
+          "body":"Body",
+          "artist":"David Sylvian",
+          "album":"Brilliant Trees",
+          "song":"The Ink in the Well",
+          "year":"1984",
+          "day":,
+          "month":,
+          "show":,
+          "venue":
+        },
+        {
+          "embed":"6J_czXr23cQ",
+          "title":"David Sylvian w/ Robert Fripp",
+          "description":"River Man [live]",
+          "body":"Body",
+          "artist":"David Sylvian",
+          "album":"Gone to Earth",
+          "song":"River Man",
+          "year":"1987",
+          "day":,
+          "month":,
+          "show":,
+          "venue":
+        },
       ]
     },
     {
@@ -217,8 +406,36 @@
     "id":"interviews",
       "contents":[
         {
+          "embed":"ZGCB6Fyn58M",
+          "title":"David Sylvian Riverside",
+          "description":"Riverside 1982 with acoustic performance of Ghosts",
+          "body":"body",
+          "artist":"David Sylvian",
+          "album":"Tin Drum",
+          "song":"Ghosts",
+          "year":"1982",
+          "day":"11",
+          "month":"20 ",
+          "show":"Riverside",
+          "venue":
+        },
+        {
+          "embed":"S1Bes4tFC6I",
+          "title":"Mick Karn Riverside",
+          "description":"Riverside 1983 with Passion in Moisture dance performance",
+          "body":"body",
+          "artist":"Mick Karn",
+          "album":"Titles",
+          "song":"Passion in Moisture",
+          "year":"1983",
+          "day":"31",
+          "month":"01 ",
+          "show":"Riverside",
+          "venue":
+        },
+        {
           "embed":"o1fpxLM3H7k",
-          "title":"Steve Jansen Riverside Interview",
+          "title":"Steve Jansen Riverside",
           "description":"Riverside 198x",
           "body":"body",
           "artist":"Steve Jansen",
@@ -228,6 +445,34 @@
           "day":,
           "month":,
           "show":"Riverside",
+          "venue":
+        },
+        {
+          "embed":"OHV0JJz-hVU",
+          "title":"The Dolphin Brothers",
+          "description":"Riverside 198x",
+          "body":"body",
+          "artist":"Steve Jansen, Richard Barbieri",
+          "album":,
+          "song":,
+          "year":"198x",
+          "day":,
+          "month":,
+          "show":,
+          "venue":
+        },
+        {
+          "embed":"-vntV1Jj3No",
+          "title":"Mick Karn &amp; Peter Murphy",
+          "description":"The Tube",
+          "body":"body",
+          "artist":"Mick Karn",
+          "album":"The Waking Hour",
+          "song":,
+          "year":"198x",
+          "day":,
+          "month":,
+          "show":"The Tube",
           "venue":
         },
       ]
