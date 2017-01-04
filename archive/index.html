@@ -13,56 +13,109 @@ js_footer:
   <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 target">
     {% for archive in site.data.archives.archives %}
     <section id="{{ archive.id }}">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="m-b-3">{{ archive.name }}</h2>
-        </div>
-        {% for content in archive.contents %}
-          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 modal-item margin-bottom-30">
-            {% if archive.id == "bamboo" %}
-              <img src="{{ content.img_thumb }}" class="img-fluid archive-item margin-bottom-15" title="Bamboo Fanzine Issue {{ content.issue }}, {{ content.month }} {{ content.year }}" data-toggle="modal" data-target="#issue-{{ content.issue }}" />
-              <p>
-                <span title="Bamboo Fanzine Issue {{ content.issue }}, {{ content.month }} {{ content.year }}" data-toggle="modal" data-target="#issue-{{ content.issue }}">
-                  <strong>Issue {{ content.issue }}</strong><br />
-                  {{ content.month }} {{ content.year }}
-                </span>
-                {% if content.url_action != null %}
-                  <a href="{{ content.url_action}}" target="_blank" class="float-md-right" style="padding-right:5px;" data-toggle="tooltip" data-placement="right" title="Download PDF"><i class="fa fa-floppy-o" aria-hidden="true" title="Downlad Bamboo Issue {{ content.issue }} PDF"></i></a>
-                {% endif %}
-              </p>
-            {% elsif archive.id == "tour-history" %}
-
-            {% else %}
-              <img src="{{ content.img_thumb }}" class="img-fluid archive-item margin-bottom-15" title="{{ content.title }} {{ content.year }}" data-toggle="modal" data-target="#{{ content.id }}" />
-              <p>
-                <span title="{{ content.title }} {{ content.year }}" data-toggle="modal" data-target="#{{ content.id }}">
-                  <strong>{{ content.title }}</strong><br />
-                  {{ content.author }}
-                </span>
-              </p>
+      {% if archive.id !="tour-history" %}
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="m-b-3">{{ archive.name }}</h2>
+            {% if archive.body != null %}
+              <p class="m-b-3">{{ archive.body }}</p>
             {% endif %}
           </div>
-          {% if archive.id == "bamboo" %}
-            <div class="modal fade video-clip" id="issue-{{ content.issue }}" tabindex="-1" role="dialog" aria-labelledby="issue-{{ content.issue }}">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <img src="{{ content.img_original }}" class="img-fluid" />
-                  {{ archive.name }} {{ content.title }}
+          {% for content in archive.contents %}
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 modal-item margin-bottom-30">
+              {% if archive.id == "bamboo" %}
+                <img src="{{ content.img_thumb }}" class="img-fluid archive-item margin-bottom-15" title="Bamboo Fanzine Issue {{ content.issue }}, {{ content.month }} {{ content.year }}" data-toggle="modal" data-target="#issue-{{ content.issue }}" />
+                <p>
+                  <span title="Bamboo Fanzine Issue {{ content.issue }}, {{ content.month }} {{ content.year }}" data-toggle="modal" data-target="#issue-{{ content.issue }}">
+                    <strong>Issue {{ content.issue }}</strong><br />
+                    {{ content.month }} {{ content.year }}
+                  </span>
+                  {% if content.url_action != null %}
+                    <a href="{{ content.url_action}}" target="_blank" class="float-md-right" style="padding-right:5px;" data-toggle="tooltip" data-placement="right" title="Download PDF"><i class="fa fa-floppy-o" aria-hidden="true" title="Downlad Bamboo Issue {{ content.issue }} PDF"></i></a>
+                  {% endif %}
+                </p>
+              {% else %}
+                <img src="{{ content.img_thumb }}" class="img-fluid archive-item margin-bottom-15" title="{{ content.title }} {{ content.year }}" data-toggle="modal" data-target="#{{ content.id }}" />
+                <p>
+                  <span title="{{ content.title }} {{ content.year }}" data-toggle="modal" data-target="#{{ content.id }}">
+                    <strong>{{ content.title }}</strong><br />
+                    {{ content.author }}
+                  </span>
+                </p>
+              {% endif %}
+            </div>
+  <!-- CONTENT MODAL -->
+            {% if archive.id == "bamboo" %}
+              <div class="modal fade video-clip" id="issue-{{ content.issue }}" tabindex="-1" role="dialog" aria-labelledby="issue-{{ content.issue }}">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <img src="{{ content.img_original }}" class="img-fluid" />
+                    {{ archive.name }} {{ content.title }}
+                  </div>
                 </div>
               </div>
-            </div>
-          {% else %}
-            <div class="modal fade video-clip" id="{{ content.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ content.id }}">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <img src="{{ content.img_original }}" class="img-fluid" />
-                  {{ archive.name }} {{ content.title }}
+            {% else %}
+              <div class="modal fade video-clip" id="{{ content.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ content.id }}">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <img src="{{ content.img_original }}" class="img-fluid" />
+                    {{ archive.name }} {{ content.title }}
+                  </div>
                 </div>
               </div>
+            {% endif %}
+          {% endfor %}
+  <!-- END CONTENT MODAL -->
+        </div>
+      {% else %}
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="m-b-3">{{ archive.name }}</h2>
+            {% if archive.body != null %}
+              {{ archive.body }}
+            {% endif %}
+            <div class="table-responsive">
+              <table class="table table-sm">
+                <thead>
+                  <th class="col-md-3">Date</th>
+                  <th class="col-md-6">Venue</th>
+                  <th class="col-md-3">Location</th>
+                </thead>
+                <tbody>
+                  {% for content in archive.contents %}
+                    {% if archive.id == "tour-history" %}
+                      <tr>
+                        <td class="col-md-3 text-grey-9">
+                          {% if content.year != null %}
+                            {{ content.year }}
+                          {% endif %}
+                          {% if content.month != null %}
+                            {{ content.month }}
+                          {% else %}
+                            --
+                          {% endif %}
+                          {% if content.day != null %}
+                            {{ content.day}}
+                          {% else %}
+                            --
+                          {% endif %}
+                        </td>
+                        <td class="col-md-6 {% if content.price == "cancelled" %}strike{% endif %}">{{ content.venue }}</td>
+                        <td class="col-md-3 text-grey-9">
+                          {{ content.city-country }}
+                          {% if content.excerpt != null %}
+                            <i class="fa fa-sticky-note-o pull-right" aria-hidden="true" data-toggle="tooltip" data-placement="right" data-html="true" title="{{ content.excerpt }}"></i>
+                          {% endif %}
+                        </td>
+                      </tr>
+                    {% endif %}
+                  {% endfor %}
+                </tbody>
+              </table>
             </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+          </div>
+        </div>
+      {% endif %}
     </section>
     {% endfor %}
   </div>
@@ -70,27 +123,6 @@ js_footer:
     {% include menu_archive.html %}
   </div>
 </div>
-
-{% raw %}
-<div class="table-responsive">
-  <table class="responsive">
-    <thead>
-      <th>Date</th>
-      <th>Venue</th>
-      <th>Notes</th>
-    </thead>
-    <tbody>
-      {% for content in archives.content.id == "tour-history" %}
-        <tr>
-          <td>{{ content.year }}.{{ content.month }}.{{ content.day}}</td>
-          <td>{{ content.venue }}</td>
-          <td>{{ content.excerpt }}</td>
-        <tr>
-      {% endfor %}
-    </tbody>
-  </table>
-</div>
-{% endraw % }
 
 
   <div class="row row-bottom-60 body-content">
