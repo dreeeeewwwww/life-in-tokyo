@@ -3,12 +3,10 @@ title: Images
 layout: default
 nav: images
 js_footer:
-- navigation.js
-
+- tether_menu.js
 ---
 <div class="row row-bottom-60">
-  <div class="col-md-12">
-    <h1>Images</h1>
+  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 target">
     {% for polaroid in site.data.polaroids.polaroids %}
       <h2 class="m-b-3">{{ polaroid.name }}</h2>
       <div class="card-columns">
@@ -16,7 +14,7 @@ js_footer:
           <div class="card card-polaroids">
             <img src="{{ base }}/assets/images/{{ asset.img }}" class="card-img img-fluid" data-toggle="modal" data-target="#{{ asset.id }}" />
           </div>
-          <div class="modal fade polaroid" id="{{ asset.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ asset.title }}">
+          <div class="modal fade video-clip" id="{{ asset.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ asset.title }}">
             <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <img src="{{ base }}/assets/images/{{ asset.img }}" class="img-responsive" />
@@ -33,5 +31,8 @@ js_footer:
         {% endfor %}
       </div>
     {% endfor %}
+  </div>
+  <div class="col-lg-3 col-md-3 hidden-sm-down">
+    {% include menu_images.html %}
   </div>
 </div>
