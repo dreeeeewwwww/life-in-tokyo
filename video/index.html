@@ -3,11 +3,16 @@ title: Video
 layout: default
 nav: video
 scrollspy: true
+js_head:
+- loader.js
 js_footer:
 - jquery.matchHeight.min.js
 - jquery.matchHeight.init.js
 - tether_menu.js
 ---
+<div id="loader">
+  <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" />
+</div>
 <div class="row row-bottom-60 body-content">
   <div class="col-md-8 col-sm-8 col-xs-12 target">
     {% for video in site.data.videos.videos %}
