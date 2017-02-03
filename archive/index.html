@@ -1,16 +1,15 @@
 ---
 title: Archive
-layout: default
+layout: archive-index
 nav: archive
 scrollspy: true
-js_footer:
-- jquery.matchHeight.min.js
-- jquery.matchHeight.init.js
+js_head:
 - tooltip.js
 - tether_menu.js
 ---
 <div class="row row-bottom-60 body-content">
-  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 target">
+  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 pin-target">
+
     {% for archive in site.data.archives.archives %}
     <section id="{{ archive.id }}">
       {% if archive.id !="tour-history" %}
@@ -118,8 +117,11 @@ js_footer:
       {% endif %}
     </section>
     {% endfor %}
+
   </div>
+  <div class="pin-element" style="display:relative; background:#999; width:100px; height:100px;">&nbsp;</div>
   <div class="col-lg-3 col-md-3 hidden-sm-down">
+
     {% include menu_archive.html %}
   </div>
 </div>
