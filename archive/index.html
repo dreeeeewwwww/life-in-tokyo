@@ -3,12 +3,14 @@ title: Archive
 layout: archive-index
 nav: archive
 scrollspy: true
-js_head:
+js_footer:
 - tooltip.js
 - tether_menu.js
 ---
+
 <div class="row row-bottom-60 body-content">
   <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 pin-target">
+
 
     {% for archive in site.data.archives.archives %}
     <section id="{{ archive.id }}">
@@ -73,18 +75,17 @@ js_head:
             {% if archive.body != null %}
               {{ archive.body }}
             {% endif %}
-            <div class="table-responsive">
-              <table class="table table-sm">
+              <table class="table table-responsive table-sm table-archive">
                 <thead>
-                  <th class="col-md-3">Date</th>
-                  <th class="col-md-6">Venue</th>
-                  <th class="col-md-3">Location</th>
+                  <th class="date">Date</th>
+                  <th class="venue">Venue</th>
+                  <th class="city">City</th>
                 </thead>
                 <tbody>
                   {% for content in archive.contents %}
                     {% if archive.id == "tour-history" %}
                       <tr>
-                        <td class="col-md-3 text-grey-9">
+                        <td class="date text-grey-9">
                           {% if content.year != null %}
                             {{ content.year }}
                           {% endif %}
@@ -99,8 +100,8 @@ js_head:
                             --
                           {% endif %}
                         </td>
-                        <td class="col-md-6 {% if content.price == "cancelled" %}strike{% endif %}">{{ content.venue }}</td>
-                        <td class="col-md-3 text-grey-9">
+                        <td class="venue {% if content.price == "cancelled" %}strike{% endif %}">{{ content.venue }}</td>
+                        <td class="city text-grey-9">
                           {{ content.city-country }}
                           {% if content.excerpt != null %}
                             <i class="fa fa-sticky-note-o pull-right" aria-hidden="true" data-toggle="tooltip" data-placement="right" data-html="true" title="{{ content.excerpt }}"></i>
@@ -111,7 +112,6 @@ js_head:
                   {% endfor %}
                 </tbody>
               </table>
-            </div>
           </div>
         </div>
       {% endif %}
@@ -119,10 +119,23 @@ js_head:
     {% endfor %}
 
   </div>
-  <div class="pin-element" style="display:relative; background:#999; width:100px; height:100px;">&nbsp;</div>
-  <div class="col-lg-3 col-md-3 hidden-sm-down">
+  <div class=" col-md-3 pin-element">
 
-    {% include menu_archive.html %}
+    <ul class="nav scrollspy sidebar-menu">
+      <li class="nav-item"><a class="nav-link active" href="#bamboo">Bamboo Zine</a></li>
+      <li class="nav-item"><a class="nav-link" href="#books">Books</a></li>
+      <li class="nav-item"><a class="nav-link" href="#magazines">Magazines</a></li>
+      <li class="nav-item"><a class="nav-link" href="#posters">Posters</a></li>
+      <li class="nav-item"><a class="nav-link" href="#merch">Clothing, etc</a></li>
+      <li class="nav-item"><a class="nav-link" href="#tour-program">Tour Programs</a></li>
+      <li class="nav-item"><a class="nav-link" href="#tour-history">Tour History</a></li>
+      <li class="nav-item">--</li>
+      <li class="nav-item"><a class="nav-link" href="#articles">Articles</a></li>
+      <li class="nav-item"><a class="nav-link" href="#connection">Connection</a></li>
+      <li class="nav-item">--</li>
+      <li class="nav-item"><a class="nav-link" href="#contribute">Contribute</a></li>
+    </ul>
+
   </div>
 </div>
 
